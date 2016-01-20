@@ -1,0 +1,34 @@
+
+
+// #####BASICS#####
+
+body {
+  padding-top: 70px;
+  -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+  zoom: 0.8; /* Other non-webkit browsers */
+  zoom: 80%; /* Webkit browsers */
+}
+
+footer {
+  margin-top: 70px;
+}
+
+
+
+// ####GENERAL####
+
+.no-svg #logo {
+  background-image: url('../images/logo.png');
+}
+
+#footerLogo { height: 20px; }
+.no-svg #footerLogo {
+  background-image: url('../images/logo.png');
+}
+
+
+div.mosaic-item.modal-trigger.colored:hover{
+  .mosaic-holder .mosaic-item:before {
+    background-color: #222945;
+  }
+}

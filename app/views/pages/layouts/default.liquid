@@ -1,0 +1,55 @@
+---
+title: Default layout
+is_layout: false
+---
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Responsive, Template">
+    <meta name="robots" content="all">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <title>{{ site.name }}</title>
+
+    <link rel="shortcut icon" href="{{ 'favicon.png' | theme_image_url }}">
+
+    {{ 'bootstrap.css'                     | stylesheet_tag }}
+    {{ 'application.css'                   | stylesheet_tag }}
+    {{ 'flexslider.css'                    | stylesheet_tag }}
+    {{ 'prettyPhoto.css'                   | stylesheet_tag }}
+    {{ 'stylesheet.css'                    | stylesheet_tag }}
+    {{ 'font-awesome/font-awesome.min.css' | stylesheet_tag }}
+
+  </head>
+  <body>
+    {% include 'header' %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include 'footer' %}
+
+    {{ 'jquery-1.11.1.min.js'                         | javascript_tag }}
+    <!-- {{ 'jquery.min.js'                                | javascript_tag }} -->
+    <!-- {{ 'bootstrap.min.js'                             | javascript_tag }} -->
+    {{ 'application.js'                               | javascript_tag }}
+
+    {{ 'script.js'                                    | javascript_tag }}
+    {{ 'jquery-migrate-1.2.1.min.js'                  | javascript_tag }}
+    {{ 'css_browser_selector.js'                      | javascript_tag }}
+    {{ 'jquery.flexslider-min.js'                     | javascript_tag }}
+    {{ 'jquery.easing-1.3.js'                         | javascript_tag }}
+    {{ 'jquery.prettyPhoto.js'                        | javascript_tag }}
+    {{ 'jquery.address-1.5.min.js'                    | javascript_tag }}
+    {{ 'jquery.carouFredSel-6.2.1-packed.js'          | javascript_tag }}
+    {{ '../stylesheets/bootstrap/js/bootstrap.min.js' | javascript_tag }}
+
+
+  </body>
+</html>

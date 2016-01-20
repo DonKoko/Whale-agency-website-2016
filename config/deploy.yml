@@ -1,0 +1,22 @@
+# development:
+#   host: dev.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+# staging:
+#   host: staging.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+# production:
+#   host: www.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+#   # ssl: true
+
+live:
+  host: locomotive.works
+  handle: tropical-fern-556
+  email: nikolay@whale-agency.com
+  api_key: 412e9c381055e852f1afcbc5b9be0cafbe795563
