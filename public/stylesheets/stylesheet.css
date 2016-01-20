@@ -5885,16 +5885,16 @@ header i {
 .mosaic-holder .mosaic-item.colored {
   background-color: #fff!important;
 }
-.mosaic-holder .mosaic-item.colored .title,
+/*.mosaic-holder .mosaic-item.colored .title,
 .mosaic-holder .mosaic-item.colored .short-tag {
   color: #000!important;
-}
+}*/
 #works .load-more-holder .load-more {
   background-color: #f0f0f1!important;
 }
 #works .load-more-holder .load-more:hover {
   color: #fff!important;
-  background-color: #c10100 !important;
+  background-color: #222945 !important;
 }
 #services {
   min-height: 926px;
@@ -5908,10 +5908,10 @@ header i {
 }
 /*---------------------------------------*/
 /*
------------Theme: Musician------------- 
+-----------Theme: Musician-------------
 @first-color:#19262F;
 @second-color:#0F0F10;
-@highlight:#C10100;
+@highlight:#222945;
 @highlight-txt:#fff;
 @link-color:#000;
 @text-color:#000;
@@ -5925,7 +5925,7 @@ header i
 }
 .mosaic-holder .mosaic-item {
   background-color: #fff!important;
- 
+
   .title,.short-tag,.meta:before{
     color: #fff!important;
   }
@@ -5944,7 +5944,7 @@ header i
   background-color: #f0f0f1!important;
   &:hover{
   color:#fff!important;
-    background-color: @first-color!important; 
+    background-color: @first-color!important;
   }
 }
 #services{
@@ -5966,7 +5966,7 @@ header i
 
 
 
------------Theme: Restaurant------------- 
+-----------Theme: Restaurant-------------
 @first-color:#19262F;
 @second-color:#0F0F10;
 @highlight:#19262F;
@@ -5983,7 +5983,7 @@ header i
 }
 .mosaic-holder .mosaic-item {
   background-color: #fff!important;
- 
+
   .title,.short-tag,.meta:before{
     color: #fff!important;
   }
@@ -6002,7 +6002,7 @@ header i
   background-color: #f0f0f1!important;
   &:hover{
   color:#fff!important;
-    background-color: @first-color!important; 
+    background-color: @first-color!important;
   }
 }
 #services{
@@ -6057,7 +6057,7 @@ img {
 a:hover,
 a:focus,
 a:active {
-  color: #c10100;
+  color: #222945;
 }
 a {
   color: #ffffff;
@@ -6083,13 +6083,13 @@ body {
   padding: 0;
 }
 ::-moz-selection {
-  background-color: #c10100;
+  background-color: #222945;
   color: #ffffff;
   text-shadow: none;
   -webkit-text-shadow: none;
 }
 ::selection {
-  background-color: #c10100;
+  background-color: #222945;
   color: #ffffff;
   text-shadow: none;
   -webkit-text-shadow: none;
@@ -6130,7 +6130,7 @@ h4 {
   color: #fff;
 }
 .play-button.inverse:hover {
-  color: #c10100;
+  color: #222945;
 }
 .play-button:before {
   content: "\f144";
@@ -6188,7 +6188,7 @@ header {
 }
 header.narrow {
   padding: 10px 0;
-  background-color: #c10100;
+  background-color: #222945;
 }
 header .logo {
   font-weight: 800;
@@ -6263,7 +6263,7 @@ header .top-menu-holder ul li a:focus {
   display: block;
   background-color: rgba(193, 1, 0, 0.8);
   background: none\9;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc10100', endColorstr='#ccc10100');
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc222945', endColorstr='#cc222945');
   width: 100%;
   height: 100%;
   position: absolute;
@@ -6542,7 +6542,7 @@ header .top-menu-holder ul li a:focus {
   z-index: 500;
 }
 #works .load-more-holder .load-more {
-  background-color: #c10100;
+  background-color: #222945;
   color: #0f0f10;
   font-size: 30px;
   text-transform: capitalize;
@@ -6558,7 +6558,7 @@ header .top-menu-holder ul li a:focus {
 }
 #works .load-more-holder .load-more:hover {
   background-color: #0f0f10;
-  color: #c10100;
+  color: #222945;
 }
 .mosaic-holder {
   padding: 0 15px;
@@ -6582,7 +6582,7 @@ header .top-menu-holder ul li a:focus {
   background-color: #0f0f10;
 }
 .mosaic-holder .mosaic-item.colored .title {
-  color: #c10100;
+  color: #222945;
 }
 .mosaic-holder .mosaic-item.imaged .title,
 .mosaic-holder .mosaic-item.imaged .short-tag {
@@ -6601,7 +6601,7 @@ header .top-menu-holder ul li a:focus {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #c10100;
+  background-color: #222945;
   position: absolute;
   top: 0;
   opacity: 0;
@@ -6659,7 +6659,7 @@ header .top-menu-holder ul li a:focus {
   line-height: 26px;
   margin: 23px 0;
   font-weight: 700;
-  color: #c10100;
+  color: #222945;
 }
 .mosaic-holder .mosaic-item .image img {
   -webkit-transition: all 0.3s ease;
@@ -6688,11 +6688,11 @@ header .top-menu-holder ul li a:focus {
   top: 0;
 }
 .mosaic-holder .mosaic-item:hover .meta:before {
-  color: #0f0f10;
+  color: white;
 }
 .mosaic-holder .mosaic-item:hover .meta .title,
 .mosaic-holder .mosaic-item:hover .meta .short-tag {
-  color: #0f0f10;
+  color: white;
 }
 .mosaic-holder .mosaic-item:hover:before {
   opacity: 0.8;
@@ -6713,7 +6713,7 @@ header .top-menu-holder ul li a:focus {
   z-index: 300;
 }
 #services .services-slider .flex-direction-nav a:hover {
-  color: #c10100 !important;
+  color: #222945 !important;
 }
 #services .services-slider .flex-direction-nav a.btn-prev {
   left: 1%;
@@ -6751,7 +6751,7 @@ header .top-menu-holder ul li a:focus {
   font-weight: 800;
   letter-spacing: -1px;
   text-transform: capitalize;
-  color: #c10100;
+  color: #222945;
 }
 #services .services-slider .slides .caption .play-button {
   font-size: 14px;
@@ -6806,7 +6806,7 @@ header .top-menu-holder ul li a:focus {
 #teams .mosaic-item.colored .title,
 #teams .mosaic-item.colored .short-tag,
 #teams .mosaic-item.colored .social-icons a {
-  color: #c10100;
+  color: #222945;
 }
 #teams .mosaic-item .title,
 #teams .mosaic-item .short-tag,
@@ -6816,10 +6816,10 @@ header .top-menu-holder ul li a:focus {
 #teams .mosaic-item:hover .title,
 #teams .mosaic-item:hover .short-tag,
 #teams .mosaic-item:hover .social-icons a {
-  color: #0f0f10;
+  color: white;
 }
 #teams .mosaic-item.inverse {
-  background-color: #c10100 !important;
+  background-color: #222945 !important;
 }
 #teams .mosaic-item.inverse .meta:before {
   color: #0f0f10;
@@ -6835,10 +6835,10 @@ header .top-menu-holder ul li a:focus {
 #teams .mosaic-item.inverse:hover .title,
 #teams .mosaic-item.inverse:hover .short-tag,
 #teams .mosaic-item.inverse:hover .social-icons a {
-  color: #c10100 !important;
+  color: #222945 !important;
 }
 #teams .mosaic-item.inverse:hover .meta:before {
-  color: #c10100 !important;
+  color: #222945 !important;
 }
 .tiles-holder .tile-item {
   width: 50%;
@@ -6887,7 +6887,7 @@ header .top-menu-holder ul li a:focus {
   -ms-filter: grayscale(100%);
 }
 .tiles-holder .tile-item:hover .caption {
-  background-color: #c10100;
+  background-color: #222945;
 }
 .tiles-holder .tile-item:hover .image img {
   filter: grayscale(0%);
@@ -6960,7 +6960,7 @@ header .top-menu-holder ul li a:focus {
   padding: 26px 0;
 }
 #footer .icon {
-  color: #c10100;
+  color: #222945;
   font-size: 25px;
   line-height: 25px;
   text-align: center;
@@ -6976,7 +6976,7 @@ header .top-menu-holder ul li a:focus {
   color: #fff;
 }
 #footer .copyright a:hover {
-  color: #c10100 !important;
+  color: #222945 !important;
 }
 /*Preloader*/
 @-webkit-keyframes bubble {
