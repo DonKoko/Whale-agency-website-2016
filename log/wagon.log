@@ -1130,3 +1130,307 @@ service=listen action=reload resource=snippets timestamp=2016-01-19 22:17:30 +01
   [0;32;49mCompleted 200 OK in 48.7ms
 
 [0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:22:41 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 24.7ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:22:53 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 19.6ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:25:10 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 69.8ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:26:01 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 16.1ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:26:09 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 22.5ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-20 18:28:33 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:28:33 +0100
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:28:41 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 141.4ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:28:44 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 24.7ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:29:18 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 24.1ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-20 18:29:39 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:29:39 +0100
+service=listen action=reload resource=pages timestamp=2016-01-20 18:29:40 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:29:40 +0100
+service=listen action=reload resource=pages timestamp=2016-01-20 18:29:59 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:29:59 +0100
+service=listen action=reload resource=pages timestamp=2016-01-20 18:30:06 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:30:06 +0100
+service=listen action=reload resource=pages timestamp=2016-01-20 18:30:09 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:30:09 +0100
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:30:15 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 89.3ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-20 18:31:02 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:31:02 +0100
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 18:31:03 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 29.9ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-20 18:31:13 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:31:13 +0100
+service=listen action=reload resource=pages timestamp=2016-01-20 18:31:22 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 18:31:22 +0100
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 19:26:05 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 100.6ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-20 19:27:35 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 19:27:35 +0100
+service=listen action=reload resource=pages timestamp=2016-01-20 19:28:34 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 19:28:34 +0100
+service=listen action=reload resource=pages timestamp=2016-01-20 19:29:42 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 19:29:42 +0100
+service=listen action=reload resource=pages timestamp=2016-01-20 19:30:05 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-20 19:30:05 +0100
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 19:32:15 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 36.0ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 19:33:49 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 18.5ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 19:34:35 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 17.3ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 19:34:41 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 33.7ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 19:34:41 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 13.3ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 19:35:03 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 16.9ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-20 19:35:03 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 12.7ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-22 17:27:37 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 177.1ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-22 17:28:03 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:28:03 +0100
+service=listen action=reload resource=pages timestamp=2016-01-22 17:28:38 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:28:38 +0100
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-22 17:28:42 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 36.0ms
+
+[0m
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-22 17:31:32 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 79.0ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-22 17:39:49 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:39:49 +0100
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-22 17:39:51 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 76.5ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-22 17:40:59 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:40:59 +0100
+[0;97;44mWhale Agency[0m
+[0;97;49mStarted GET "/" at 2016-01-22 17:41:07 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+[index] missing editable_text "label:" (content)
+  [0;32;49mCompleted 200 OK in 46.2ms
+
+[0m
+service=listen action=reload resource=pages timestamp=2016-01-22 17:41:39 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:41:39 +0100
+service=listen action=reload resource=pages timestamp=2016-01-22 17:42:14 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:42:14 +0100
+service=listen action=reload resource=site timestamp=2016-01-22 17:42:21 +0100
+service=listen action=reload resource=content_types timestamp=2016-01-22 17:42:21 +0100
+service=listen action=reload resource=pages timestamp=2016-01-22 17:42:21 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:42:21 +0100
+service=listen action=reload resource=content_entries timestamp=2016-01-22 17:42:21 +0100
+service=listen action=reload resource=translations timestamp=2016-01-22 17:42:21 +0100
+service=listen action=reload resource=pages timestamp=2016-01-22 17:42:22 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:42:22 +0100
+service=listen action=reload resource=pages timestamp=2016-01-22 17:42:22 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:42:22 +0100
+service=listen action=reload resource=pages timestamp=2016-01-22 17:42:40 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:42:40 +0100
+service=listen action=reload resource=pages timestamp=2016-01-22 17:47:28 +0100
+service=listen action=reload resource=snippets timestamp=2016-01-22 17:47:28 +0100
+[0;97;44mWhale Agency website[0m
+[0;97;49mStarted GET "/" at 2016-02-16 11:29:58 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 126.9ms
+
+[0m

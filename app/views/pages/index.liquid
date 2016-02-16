@@ -5,6 +5,7 @@ handle: home
 editable_elements:
   content/heading: "<h1>This actually works!</h1>"
   content/sub_heading: Awesome things
+  'content/label:': We work with a great happiness feel
 ---
 {% extends 'layouts/default' %}
 
@@ -38,7 +39,7 @@ editable_elements:
               </div>
               <div class="big">
                 {% editable_text "heading", priority: 1, label: "Heading 1 of the website home page" %}
-                  <h1>Hollomoon on Space</h1>
+                  Hollomoon on Space
                 {% endeditable_text %}
               </div>
 
@@ -1059,13 +1060,21 @@ editable_elements:
               <div class="slide-content">
                 <div class="caption">
                   <div class="small uppercase">
-                    what we are expert
+                    {% editable_text, label: "PreHeading for services section" %}
+                      what we are expert
+                    {% endeditable_text %}
+
                   </div>
                   <div class="big">
-                    we build apps.
+                    {% editable_text, label: "Heading for services section" %}
+                      we build apps.
+                    {% endeditable_text %}
                   </div>
                   <div class="small">
-                    We work with a great happiness feel
+                    {% editable_text, label: "SubHeading for services section" %}
+                      We work with a great happiness feel
+                    {% endeditable_text %}
+
                   </div>
 
                   <a class="play-button inverse" href="#">watch the process</a>
@@ -1194,17 +1203,17 @@ editable_elements:
 
 
              <div class="mosaic-item prettyphoto imaged"  >
-              <div class="image" data-background-image="{{ 'member01.jpg' | theme_image_url }}">
+              <div class="image" data-background-image="{{ 'Carlosthecreator.jpg' | theme_image_url }}">
 
               </div>
 
               <div class="meta">
                 <div class="title">
-                  joanne<br>
-                  de huffington.
+                  Carlos<br>
+                  Virreira.
                 </div>
                 <div class="short-tag">
-                  creative director
+                  People & Objectives
                 </div>
                 <div class="social-icons">
                   <ul>
@@ -1445,11 +1454,11 @@ editable_elements:
       <div class="container">
         <div class="col-md-4">
           <div class="footer-widget">
-            <h1>studio.</h1>
+            <h1>Office.</h1>
             <div class="body">
-              <p>Wijaya Kusuma 3 Street,no 70A<br>
-                East Jakarta - Indonesia<br>
-                13460
+              <p>Gele Rijders Plein 11-1<br>
+                6811AN Arnhem<br>
+                Netherlands
               </p>
               <div class="margined">
                 Tel. +1 808 1234 456
@@ -1467,7 +1476,7 @@ editable_elements:
 
               </p>
               <div class="margined">
-                hire@yourdomain.com
+                hello@whale-agency.com
               </div>
             </div>
 
