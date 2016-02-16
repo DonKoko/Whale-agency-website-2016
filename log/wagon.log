@@ -1434,3 +1434,17 @@ service=listen action=reload resource=snippets timestamp=2016-01-22 17:47:28 +01
   [0;32;49mCompleted 200 OK in 126.9ms
 
 [0m
+service=listen action=reload resource=pages timestamp=2016-02-16 11:31:23 +0100
+service=listen action=reload resource=snippets timestamp=2016-02-16 11:31:23 +0100
+[0;97;44mWhale Agency website[0m
+[0;97;49mStarted GET "/" at 2016-02-16 11:31:47 +0100[0m
+  Params: {}
+  Timezone: UTC
+  Detecting locale EN
+  Found page "Home page" [index]
+  [0;32;49mCompleted 200 OK in 30.4ms
+
+[0m
+service=listen action=reload resource=content_entries timestamp=2016-02-16 11:32:03 +0100
+service=listen action=reload resource=content_types timestamp=2016-02-16 11:32:03 +0100
+service=listen action=reload resource=content_entries timestamp=2016-02-16 11:32:03 +0100
