@@ -1,0 +1,9 @@
+config/deploy.yml
+
+public/samples/
+
+data/
+
+log/
+ 
+.ruby-version
