@@ -1,14 +1,14 @@
 # Human readable name of this type
-name: Images
+name: Authors
 
 # Lowercase, underscored handle used to access this type
-slug: images
+slug: authors
 
 # Explanatory text displayed in the back-office
 description: A description of the content type for the editors
 
 # Slug of field used to identify entries by default, such as the title
-label_field_name: title
+label_field_name: name
 
 # Valid values: manually, created_at, updated_at, or the slug of any field
 order_by: manually
@@ -37,40 +37,30 @@ order_by: manually
 
 # A list describing each field
 fields:
-- title: # The lowercase, underscored name of the field
-    label: Title # Human readable name of the field
+- name: # The lowercase, underscored name of the field
+    label: Name # Human readable name of the field
     type: string
     required: true
     hint: Explanatory text displayed in the back office
     localized: false
 
-- file: # The lowercase, underscored name of the field
-    label: File # Human readable name of the field
+- company: # The lowercase, underscored name of the field
+    label: Company # Human readable name of the field
+    type: string
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- picture: # The lowercase, underscored name of the field
+    label: Picture # Human readable name of the field
     type: file
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
 
-- alt_tag: # The lowercase, underscored name of the field
-    label: Alt tag # Human readable name of the field
-    type: string
-    required: false
-    hint: Explanatory text displayed in the back office
-    localized: false
-
-- source: # The lowercase, underscored name of the field
-    label: Source # Human readable name of the field
-    type: string
-    required: false
-    hint: Explanatory text displayed in the back office
-    localized: false
-
-- project:
-    label: Project
-    type: belongs_to
-    class_name: projects
-
-- publication:
-    label: Publication
-    type: belongs_to
+- publications: # The lowercase, underscored name of the field
+    label: Publication # Human readable name of the field
+    type: many_to_many
     class_name: publications
+    inverse_of: authors
+    ui_enabled: true

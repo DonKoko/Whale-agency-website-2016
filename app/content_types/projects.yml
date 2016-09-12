@@ -52,6 +52,14 @@ fields:
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
+- project_date: # The lowercase, underscored name of the field
+    label: Project date # Human readable name of the field
+    type: date
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+    # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
+
 - video: # The lowercase, underscored name of the field
     label: Video # Human readable name of the field
     type: string
@@ -66,18 +74,27 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
+- categories: # The lowercase, underscored name of the field
+    label: Categories # Human readable name of the field
+    type: tags
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+
 - cover_image: # The lowercase, underscored name of the field
     label: Cover image # Human readable name of the field
     type: file
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
+
 - clients: # The lowercase, underscored name of the field
     label: Client # Human readable name of the field
     type: many_to_many
     class_name: clients
     inverse_of: projects
     ui_enabled: true
+
 - images: # The lowercase, underscored name of the field
     label: Images # Human readable name of the field
     type: has_many

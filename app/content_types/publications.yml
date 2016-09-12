@@ -1,8 +1,8 @@
 # Human readable name of this type
-name: Images
+name: Publications
 
 # Lowercase, underscored handle used to access this type
-slug: images
+slug: publications
 
 # Explanatory text displayed in the back-office
 description: A description of the content type for the editors
@@ -44,33 +44,24 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- file: # The lowercase, underscored name of the field
-    label: File # Human readable name of the field
-    type: file
+- content: # The lowercase, underscored name of the field
+    label: Content # Human readable name of the field
+    type: text
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
+    # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
-- alt_tag: # The lowercase, underscored name of the field
-    label: Alt tag # Human readable name of the field
-    type: string
-    required: false
-    hint: Explanatory text displayed in the back office
-    localized: false
+- images: # The lowercase, underscored name of the field
+    label: Images # Human readable name of the field
+    type: has_many
+    class_name: images
+    inverse_of: publication
+    ui_enabled: true
 
-- source: # The lowercase, underscored name of the field
-    label: Source # Human readable name of the field
-    type: string
-    required: false
-    hint: Explanatory text displayed in the back office
-    localized: false
-
-- project:
-    label: Project
-    type: belongs_to
-    class_name: projects
-
-- publication:
-    label: Publication
-    type: belongs_to
-    class_name: publications
+- authors: # The lowercase, underscored name of the field
+    label: Author # Human readable name of the field
+    type: many_to_many
+    class_name: authors
+    inverse_of: publications
+    ui_enabled: true
