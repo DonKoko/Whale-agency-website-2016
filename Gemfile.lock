@@ -183,6 +183,3 @@ DEPENDENCIES
   locomotivecms_steam!
   locomotivecms_wagon (~> 2.2.0.beta1)!
   rb-fsevent (~> 0.9.1)
-
-BUNDLED WITH
-   1.12.5
