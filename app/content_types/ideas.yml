@@ -1,8 +1,8 @@
 # Human readable name of this type
-name: Authors
+name: Ideas
 
 # Lowercase, underscored handle used to access this type
-slug: authors
+slug: ideas
 
 # Explanatory text displayed in the back-office
 description: A description of the content type for the editors
@@ -44,30 +44,45 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- company: # The lowercase, underscored name of the field
-    label: Company # Human readable name of the field
+- category: # The lowercase, underscored name of the field
+    label: Category # Human readable name of the field
+    type: tags
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- description: # The lowercase, underscored name of the field
+    label: Description # Human readable name of the field
+    type: text
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+    # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
+
+- video: # The lowercase, underscored name of the field
+    label: Video # Human readable name of the field
     type: string
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
 
-- picture: # The lowercase, underscored name of the field
-    label: Picture # Human readable name of the field
+- likes: # The lowercase, underscored name of the field
+    label: Likes # Human readable name of the field
+    type: integer
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+- thumbnail: # The lowercase, underscored name of the field
+    label: Thumbnail # Human readable name of the field
     type: file
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
 
-- publications: # The lowercase, underscored name of the field
-    label: Publication # Human readable name of the field
+- authors: # The lowercase, underscored name of the field
+    label: Author # Human readable name of the field
     type: many_to_many
-    class_name: publications
-    inverse_of: authors
-    ui_enabled: true
-
-- ideas: # The lowercase, underscored name of the field
-    label: Idea # Human readable name of the field
-    type: many_to_many
-    class_name: ideas
-    inverse_of: authors
+    class_name: authors
+    inverse_of: ideas
     ui_enabled: true
