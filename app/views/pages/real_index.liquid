@@ -3,102 +3,13 @@ title: Real Home page
 published: true
 handle: real_home
 slug: real-home
-editable_elements:
-  content/heading: "<h1>This actually works!</h1>"
-  content/sub_heading: helloooo maurits
-  'content/label:': We work with a great happiness feel
 ---
 {% extends 'layouts/default' %}
 
 {% block content %}
   <div class="wrapper">
 
-    <section class="home-slider">
-      <div class="flexslider homeslider">
-        <div class="preloader bubble-loader loading">
-          <div class="1"></div>
-          <div class="2"></div>
-          <div class="3"></div>
-          <div class="4"></div>
-          <div class="5"></div>
-        </div>
-
-
-        <ul class="slides">
-
-
-          <li class="slide">
-            <div class="image no-bg" data-background-image="{{ 'slide01.jpg' | theme_image_url }}">
-
-            </div>
-            <div class="flex-caption">
-
-              <div class="small">
-                {% editable_text "sub_heading", priority: 2, label: "Subheading of the website" %}
-                  a good stuff for agency
-                {% endeditable_text %}
-              </div>
-              <div class="big">
-                {% editable_text "heading", priority: 1, label: "Heading 1 of the website home page" %}
-                  Hollomoon on Space
-                {% endeditable_text %}
-              </div>
-
-            </div>
-          </li>
-
-          <li class="slide">
-            <div class="color-slide" data-bg-color="#FEF224" >
-              <div class="middle-rectangle" data-bg-color="#ffffff">
-
-              </div>
-            </div>
-            <div class="flex-caption">
-
-              <div class="small">
-                sometimes,we will miss an emptiness
-              </div>
-              <div class="big">
-                blank. inanity. hollow.
-              </div>
-
-              <a class="play-button" href="https://www.youtube.com/watch?v=kuceVNBTJio">watch the video</a>
-
-            </div>
-          </li>
-
-          <li class="slide">
-            <div class="color-slide" data-bg-color="#FF0302" >
-              <div class="middle-rectangle" data-bg-color="#ffffff">
-
-              </div>
-            </div>
-            <div class="flex-caption">
-
-              <div class="small">
-                do you think about this before?
-              </div>
-              <div class="big">
-                tic. tac. toe
-              </div>
-
-              <a class="play-button" href="https://www.youtube.com/watch?v=kuceVNBTJio">watch the video</a>
-
-            </div>
-          </li>
-
-
-
-        </ul>
-
-        <div class="flex-direction-nav">
-
-          <a class="btn-prev" href="prev"></a>
-          <a class="btn-next" href="next"></a>
-        </div>
-      </div>
-
-    </section>
+    {% include 'slider' %}
 
     <div id="modalTemp" class="modal"></div>
 
