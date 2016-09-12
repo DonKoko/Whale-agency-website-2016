@@ -1,14 +1,14 @@
 # Human readable name of this type
-name: Projects
+name: Images
 
 # Lowercase, underscored handle used to access this type
-slug: projects
+slug: images
 
 # Explanatory text displayed in the back-office
 description: A description of the content type for the editors
 
 # Slug of field used to identify entries by default, such as the title
-label_field_name: name
+label_field_name: title
 
 # Valid values: manually, created_at, updated_at, or the slug of any field
 order_by: manually
@@ -37,50 +37,34 @@ order_by: manually
 
 # A list describing each field
 fields:
-- name: # The lowercase, underscored name of the field
-    label: Name # Human readable name of the field
+- title: # The lowercase, underscored name of the field
+    label: Title # Human readable name of the field
     type: string
     required: true
     hint: Explanatory text displayed in the back office
     localized: false
 
-- description: # The lowercase, underscored name of the field
-    label: Description # Human readable name of the field
-    type: text
+- file: # The lowercase, underscored name of the field
+    label: File # Human readable name of the field
+    type: file
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
-    # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
-- video: # The lowercase, underscored name of the field
-    label: Video # Human readable name of the field
+- alt_tag: # The lowercase, underscored name of the field
+    label: Alt tag # Human readable name of the field
     type: string
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
 
-- likes: # The lowercase, underscored name of the field
-    label: Likes # Human readable name of the field
-    type: integer
+- source: # The lowercase, underscored name of the field
+    label: Source # Human readable name of the field
+    type: string
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
-
-- cover_image: # The lowercase, underscored name of the field
-    label: Cover image # Human readable name of the field
-    type: file
-    required: false
-    hint: Explanatory text displayed in the back office
-    localized: false
-- clients: # The lowercase, underscored name of the field
-    label: Client # Human readable name of the field
-    type: many_to_many
-    class_name: clients
-    inverse_of: projects
-    ui_enabled: true
-- images: # The lowercase, underscored name of the field
-    label: Images # Human readable name of the field
-    type: has_many
-    class_name: images
-    inverse_of: project
-    ui_enabled: true
+- project:
+    label: Project
+    type: belongs_to
+    class_name: projects
