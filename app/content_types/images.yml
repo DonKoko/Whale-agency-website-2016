@@ -74,3 +74,8 @@ fields:
     label: Publication
     type: belongs_to
     class_name: publications
+
+- idea:
+    label: Idea
+    type: belongs_to
+    class_name: ideas

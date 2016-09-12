@@ -86,3 +86,10 @@ fields:
     class_name: authors
     inverse_of: ideas
     ui_enabled: true
+
+- images: # The lowercase, underscored name of the field
+    label: Images # Human readable name of the field
+    type: has_many
+    class_name: images
+    inverse_of: idea
+    ui_enabled: true
