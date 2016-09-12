@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'locomotivecms_wagon', '~> 2.0.0'
+gem 'locomotivecms_wagon', '~> 2.2.0.beta1', github: 'locomotivecms/wagon', ref: 'f0bc11b'
+gem 'locomotivecms_steam', github: 'locomotivecms/steam', ref: 'ce4210d', require: false
 
 # gem 'guard-livereload', '~> 2.5.1'
 

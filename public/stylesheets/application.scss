@@ -4,9 +4,9 @@
 
 body {
   padding-top: 70px;
-  // -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
-  // zoom: 0.8; /* Other non-webkit browsers */
-  // zoom: 80%; /* Webkit browsers */
+  -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+  zoom: 0.8; /* Other non-webkit browsers */
+  zoom: 80%; /* Webkit browsers */
 }
 
 footer {
@@ -24,4 +24,17 @@ footer {
 #footerLogo { height: 20px; }
 .no-svg #footerLogo {
   background-image: url('../images/logo.png');
+}
+
+// LANDING PAGE
+.fh { height: 100vh; min-height: 100vh;}
+.landing-wrap { background-color: #194171;}
+.fwl { position: absolute; bottom: 0; width: 100%;
+  #footer {
+    background-color: darken(#194171, 10%);
+    .copyright {
+      color: rgba(255,255,255,.8);
+      font-weight: 500;
+    }
+  }
 }

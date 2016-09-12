@@ -1,7 +1,7 @@
 ---
-title: Default layout
-slug: default
-position: 99
+title: Landing layout
+slug: landing
+position: 98
 listed: false
 published: false
 is_layout: false
@@ -13,12 +13,9 @@ is_layout: false
     {% include head %}
   </head>
   <body>
-    {% include 'header' %}
 
     {% block content %}
     {% endblock %}
-
-    {% include 'footer' %}
 
     {{ 'jquery-1.11.1.min.js'                         | javascript_tag }}
     <!-- {{ 'jquery.min.js'                                | javascript_tag }} -->
