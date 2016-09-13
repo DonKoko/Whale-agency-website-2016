@@ -12,3 +12,77 @@
   letter-spacing: 0.85px;
   text-transform: none;
 }
+
+.card {
+  min-height: 400px;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  overflow: hidden;
+
+  &:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 200;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #222945;
+    position: absolute;
+    top: 0;
+    opacity: 0.5
+  }
+
+  &:hover {
+    cursor: pointer;
+    &:before {
+      opacity: 0;
+    }
+  }
+
+  .card-date {
+    display: inline-block;
+  }
+
+  .video-card {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    .thevideo {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      min-height: 50%;
+      max-height: 50%;
+    }
+  }
+}
+
+.gradient {
+  background: -webkit-linear-gradient(left, #3023AE, #52B2F4);
+	background: linear-gradient(left, #3023AE, #52B2F4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+// OVERRIDES //
+.mosaic-holder .mosaic-item .meta {
+  text-align: left;
+  width: 90%;
+  height: 90%;
+}
+
+.mosaic-holder .mosaic-item .meta:before {
+  display: none;
+}
+
+.short-tag {
+  display: inline;
+}
