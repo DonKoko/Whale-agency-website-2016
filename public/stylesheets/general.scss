@@ -1,9 +1,3 @@
-span {
-  font-family: 'AppleGothic';
-  font-size: 10px;
-  color: #b2b2b2;
-}
-
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 .text-white { color: white; }
@@ -47,6 +41,9 @@ span {
 
   .card-date {
     display: inline-block;
+    font-family: 'AppleGothic';
+    font-size: 10px;
+    color: #b2b2b2;
   }
 
   .video-card {

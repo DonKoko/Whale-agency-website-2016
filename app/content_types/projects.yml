@@ -102,7 +102,8 @@ fields:
     inverse_of: project
     ui_enabled: true
 
-- index_card:
-    label: Index Card
+- home_card:
+    label: Home card
+    hint: A description of the relationship for the editors
     type: belongs_to
-    class_name: index_cards
+    class_name: home_cards
