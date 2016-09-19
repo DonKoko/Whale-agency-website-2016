@@ -79,3 +79,8 @@ fields:
     label: Idea
     type: belongs_to
     class_name: ideas
+
+- index_card:
+    label: Index Card
+    type: belongs_to
+    class_name: index_cards

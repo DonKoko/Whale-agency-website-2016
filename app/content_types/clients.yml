@@ -71,3 +71,8 @@ fields:
     class_name: projects
     inverse_of: clients
     ui_enabled: true
+
+- index_card:
+    label: Index Card
+    type: belongs_to
+    class_name: index_cards

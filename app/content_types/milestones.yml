@@ -58,3 +58,8 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
+
+- index_card:
+    label: Index Card
+    type: belongs_to
+    class_name: index_cards

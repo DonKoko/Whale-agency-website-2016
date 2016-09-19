@@ -93,9 +93,8 @@ fields:
     class_name: images
     inverse_of: idea
     ui_enabled: true
-- card_tags: # The lowercase, underscored name of the field
-    label: Tags # Human readable name of the field
-    type: tags
-    required: false
-    hint: Add the 'frontpage' to add a card on the homepage.
-    localized: false
+    
+- index_card:
+    label: Index Card
+    type: belongs_to
+    class_name: index_cards
