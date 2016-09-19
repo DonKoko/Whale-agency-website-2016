@@ -77,8 +77,8 @@ span {
 }
 
 .gradient {
-  background: -webkit-linear-gradient(left, #3023AE, #52B2F4);
-	background: linear-gradient(left, #3023AE, #52B2F4);
+  background: -webkit-linear-gradient(125deg, #3023AE, #52B2F4);
+	background: linear-gradient(125deg, #3023AE, #52B2F4);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
@@ -99,7 +99,7 @@ span {
   display: inline;
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .card {
     min-height: 400px;
     .playIcon {
@@ -108,7 +108,7 @@ span {
   }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .card {
     min-height: 300px;
     .playIcon {
@@ -117,7 +117,7 @@ span {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .card {
     min-height: 400px;
     .video-card {
@@ -129,7 +129,7 @@ span {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .card {
     min-height: 400px;
     .video-card {
