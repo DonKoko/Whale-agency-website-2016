@@ -1,5 +1,12 @@
-
 <div onmouseenter="playCard({{ card_number }})" onmouseout="pauzeCard({{ card_number }})" class="card modal-trigger imaged" id="card-{{ card_number }}">
+  <div class="playIcon">
+    <svg width="39px" height="39px" viewBox="22 289 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <path d="M41.5,328 C52.2695526,328 61,319.269553 61,308.5 C61,297.730447 52.2695526,289 41.5,289 C30.7304474,289 22,297.730447 22,308.5 C22,319.269553 30.7304474,328 41.5,328 Z M49.8571429,308.809524 L36.2380952,302 L36.2380952,315.619048 L49.8571429,308.809524 Z" id="Combined-Shape" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
+    </svg>
+  </div>
   <div class="image video-card">
     <img id="card-thumb-{{ card_number }}" alt="" src="{{ 'services/work02.jpg' | theme_image_url }}">
     <video loop id="video-card-{{ card_number }}" class="thevideo" preload="auto">

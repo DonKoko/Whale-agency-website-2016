@@ -1,3 +1,9 @@
+span {
+  font-family: 'AppleGothic';
+  font-size: 10px;
+  color: #b2b2b2;
+}
+
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 .text-white { color: white; }
@@ -14,7 +20,6 @@
 }
 
 .card {
-  min-height: 400px;
   position: relative;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -47,9 +52,10 @@
   .video-card {
     position: absolute;
     top: -50%;
-    left: -50%;
+    left: -70%;
     width: 200%;
     height: 200%;
+    z-index: -1;
     .thevideo {
       height: 100%;
       position: absolute;
@@ -61,6 +67,12 @@
       min-height: 50%;
       max-height: 50%;
     }
+  }
+
+  svg {
+    bottom: 15px;
+    left: 10px;
+    position: absolute;
   }
 }
 
@@ -85,4 +97,46 @@
 
 .short-tag {
   display: inline;
+}
+
+@media (min-width: 1200px) {
+  .card {
+    min-height: 400px;
+    .playIcon {
+      min-height: 400px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    min-height: 300px;
+    .playIcon {
+      min-height: 300px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    min-height: 400px;
+    .video-card {
+      left: -50%;
+    }
+    .playIcon {
+      min-height: 400px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: 400px;
+    .video-card {
+      left: -50%;
+    }
+    .playIcon {
+      min-height: 400px;
+    }
+  }
 }
