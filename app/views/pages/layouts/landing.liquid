@@ -17,23 +17,7 @@ is_layout: false
     {% block content %}
     {% endblock %}
 
-    {{ 'jquery-1.11.1.min.js'                         | javascript_tag }}
-    <!-- {{ 'jquery.min.js'                                | javascript_tag }} -->
-    <!-- {{ 'bootstrap.min.js'                             | javascript_tag }} -->
-    {{ 'application.js'                               | javascript_tag }}
-
-    {{ 'script.js'                                    | javascript_tag }}
-    {{ 'jquery-migrate-1.2.1.min.js'                  | javascript_tag }}
-    {{ 'css_browser_selector.js'                      | javascript_tag }}
-    {{ 'jquery.flexslider-min.js'                     | javascript_tag }}
-    {{ 'jquery.easing-1.3.js'                         | javascript_tag }}
-    {{ 'jquery.prettyPhoto.js'                        | javascript_tag }}
-    {{ 'jquery.address-1.5.min.js'                    | javascript_tag }}
-    {{ 'jquery.carouFredSel-6.2.1-packed.js'          | javascript_tag }}
-    {{ '../stylesheets/bootstrap/js/bootstrap.min.js' | javascript_tag }}
-    {{ 'plugins/horizontal-timeline/main.js'         | javascript_tag }}
-
-
-
+    {% include 'framework' %}
+  
   </body>
 </html>

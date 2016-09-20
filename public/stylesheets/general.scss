@@ -88,6 +88,16 @@ p{
   }
 }
 
+#grid-section {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+  max-height: 1200px;
+  padding: 7vmax;
+  background-color: white;
+}
+
 .gradient {
   background: -webkit-linear-gradient(125deg, #3023AE, #52B2F4);
 	background: linear-gradient(125deg, #3023AE, #52B2F4);
@@ -105,6 +115,10 @@ p{
 
 .mosaic-holder .mosaic-item .meta:before {
   display: none;
+}
+
+.isolayer--deco1 {
+  height: 1200px !important;
 }
 
 .short-tag {
