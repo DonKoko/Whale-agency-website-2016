@@ -1,16 +1,35 @@
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville';
+
 $grey: #585858;
 $lightblue: #80BAFF;
 
+body{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  color: $grey;
+}
+
 h1{
+  font-family: 'Helvetica Neue', sans-serif;
   font-size: 50px;
+  font-weight: bold;
   margin-bottom: 25px;
 }
 
-p{
-  font-family: 'Times New Roman', serif;
-  font-size: 22px;
-  color: $grey;
+h2{
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
+
+h3{
+  font-family: 'Helvetica Neue', sans-serif;
+  color: $lightblue;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
 
 .text-center{ text-align: center; }
 .text-right { text-align: right; }
@@ -23,7 +42,6 @@ p{
 }
 .home-slider .flexslider .flex-caption .big {
   font-size: 64pt;
-  font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
   letter-spacing: 0.85px;
   text-transform: none;
 }
@@ -56,7 +74,6 @@ p{
 
   .card-date {
     display: inline-block;
-    font-family: 'AppleGothic';
     font-size: 10px;
     color: #b2b2b2;
   }
@@ -151,6 +168,11 @@ p{
   background-image: url("../images/whale_logo_blue.png");
   background-repeat: no-repeat;
   background-position: center;
+  &:hover{
+    background-image: url("../images/gif.gif");
+    background-position:left;
+    background-size: cover;
+  }
 }
 
 .table{
@@ -188,12 +210,6 @@ p{
   height: 600px;
 }
 
-.thinblue{
-  color: $lightblue;
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
 .end{
   h1{
     line-height: 90px;
@@ -206,7 +222,31 @@ p{
   box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.75);
 }
 
+.contactinfo{
+  color: black;
+  font-weight: bold;
+  a{
+    color: black;
+  }
+}
+
+.footer{
+  input[type="text"]{
+    background: transparent;
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: 1px solid #3023AE !important;
+    color: #3023AE;
+    padding-left: 0;
+    box-shadow: none !important;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
+  .container{
+    width: 970px;
+  }
   .card {
     min-height: 400px;
     .playIcon {
