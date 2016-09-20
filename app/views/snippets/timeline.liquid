@@ -30,9 +30,9 @@
     <ol>
       {% for milestone in contents.milestones %}
         <li class="{% if forloop.first %}selected{% endif %}" data-date="{{ milestone.date | date: '%d/%m/%Y' }}">
-          <h2>{{ milestone.title }}</h2>
-          <em>{{ milestone.date | format_date: "%d %b %Y" }}</em>
-            {{ milestone.description }}
+          <h1 class="gradient">{{ milestone.title }}</h1>
+          <h3>{{ milestone.date | format_date: "%B, %Y" }}</h3>
+            <p>{{ milestone.description }}</p>
         </li>
       {% endfor %}
     </ol>
