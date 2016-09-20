@@ -1,3 +1,18 @@
+$grey: #585858;
+$lightblue: #80BAFF;
+
+h1{
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+p{
+  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  color: $grey;
+}
+
+.text-center{ text-align: center; }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 .text-white { color: white; }
@@ -94,6 +109,87 @@
 
 .short-tag {
   display: inline;
+}
+
+.projects, .services, .whatif, .contact{
+  background-color: white;
+}
+
+.content{
+  padding: 100px;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 60px;
+}
+
+.item{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #979797;
+  border-radius: 2px;
+  margin: 0 20px 40px 0;
+  background-image: url("../images/whale_logo_blue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.table{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  & > div{
+    flex: 1 0 30%;
+    padding: 10px;
+    text-align: center;
+    &:first-child{
+      flex: 0 1 100%;
+    }
+  }
+  div{
+    padding: 50px;
+    border: 1px solid $grey;
+    ul{
+      margin-top: 50px;
+      list-style-type: none;
+      li{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.whatif{
+  background: #fff url("../images/team.png") no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-size: 800px;
+  height: 600px;
+}
+
+.thinblue{
+  color: $lightblue;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.end{
+  h1{
+    line-height: 90px;
+  }
+}
+
+.hover{
+  background-color: rgba(251,255,0,0.12);
+  padding: 5px;
+  box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.75);
 }
 
 @media only screen and (min-width: 1200px) {
