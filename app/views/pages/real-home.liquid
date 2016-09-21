@@ -21,6 +21,638 @@ editable_elements:
     <div id="modalTemp" class="modal"></div>
 
     <section id="works">
+      <div class="container">
+        <div class="mosaic-holder">
+          <div class="col-md-3 no-margin">
+
+            {% include 'card-project' %}
+
+            {% include 'card-post' %}
+
+            {% include 'card-video' with card_number: 1 %}
+
+          </div>
+
+          <div class="col-md-3 middle-row no-margin">
+            <div class="mosaic-item modal-trigger colored">
+              <div class="meta">
+                <div class="title">
+                  no more<br>
+                  war.
+                </div>
+                <div class="short-tag">
+                  branding
+                </div>
+              </div>
+               <div id="the-modal04" class="modal" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <a class="close-modal" href="#"></a>
+                    <div class="modal-slider-holder">
+                      <div class="flex-direction-nav">
+
+                        <a class="btn-prev" href="prev"></a>
+                        <a class="btn-next" href="next"></a>
+                      </div>
+                      <div class="modal-slider flexslider">
+
+                        <ul class="slides">
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-02.jpg'  | theme_image_url }}" alt="" />
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="body-holder">
+                      <h1>no more war.</h1>
+                      <div class="row row-body">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="desc">
+                            <h3>about project</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>client</h3>
+                            <p>BLAH Productions</p>
+                          </div>
+                          <div class="desc">
+                            <h3>project date</h3>
+                            <p>12 july 2014</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>share this project</h3>
+                            <ul class="share-icons">
+                              <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
+                              <li><a class="fa fa-twitter" href="#">twitter</a></li>
+                              <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mosaic-item modal-trigger imaged">
+              <div class="image">
+                <img alt="" src="{{ 'services/work03.jpg' | theme_image_url }}">
+              </div>
+              <div class="meta">
+
+                <div class="title">
+                  cyborgs<br>
+                  gears
+                </div>
+                <div class="short-tag">
+                  digital art
+                </div>
+              </div>
+               <div id="the-modal05" class="modal" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <a class="close-modal" href="#"></a>
+                    <div class="modal-slider-holder">
+                      <div class="flex-direction-nav">
+
+                        <a class="btn-prev" href="prev"></a>
+                        <a class="btn-next" href="next"></a>
+                      </div>
+                      <div class="modal-slider flexslider">
+
+                        <ul class="slides">
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-02.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="body-holder">
+                      <h1>cyborgs gears</h1>
+                      <div class="row row-body">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="desc">
+                            <h3>about project</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>client</h3>
+                            <p>BLAH Productions</p>
+                          </div>
+                          <div class="desc">
+                            <h3>project date</h3>
+                            <p>12 july 2014</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>share this project</h3>
+                            <ul class="share-icons">
+                              <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
+                              <li><a class="fa fa-twitter" href="#">twitter</a></li>
+                              <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mosaic-item modal-trigger small colored">
+              <div class="meta">
+                <div class="title">
+                  no for new<br>
+                 colonialism.
+                </div>
+                <div class="short-tag">
+                  branding
+                </div>
+              </div>
+                <div id="the-modal55" class="modal" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <a class="close-modal" href="#"></a>
+                    <div class="modal-slider-holder">
+                      <div class="flex-direction-nav">
+
+                        <a class="btn-prev" href="prev"></a>
+                        <a class="btn-next" href="next"></a>
+                      </div>
+                      <div class="modal-slider flexslider">
+
+                        <ul class="slides">
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-02.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="body-holder">
+                      <h1>no for new colonialism.</h1>
+                      <div class="row row-body">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="desc">
+                            <h3>about project</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>client</h3>
+                            <p>BLAH Productions</p>
+                          </div>
+                          <div class="desc">
+                            <h3>project date</h3>
+                            <p>12 july 2014</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>share this project</h3>
+                            <ul class="share-icons">
+                              <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
+                              <li><a class="fa fa-twitter" href="#">twitter</a></li>
+                              <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 middle-row no-margin">
+            <div class="mosaic-item modal-trigger imaged">
+              <div class="image">
+                <img alt="" src="{{ 'services/work04.jpg' | theme_image_url }}">
+              </div>
+              <div class="meta">
+
+                <div class="title">
+                  kid cudi<br>
+                  music album.
+                </div>
+                <div class="short-tag">
+                  branding
+                </div>
+              </div>
+
+               <div id="the-modal06" class="modal" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <a class="close-modal" href="#"></a>
+                    <div class="modal-slider-holder">
+                      <div class="flex-direction-nav">
+
+                        <a class="btn-prev" href="prev"></a>
+                        <a class="btn-next" href="next"></a>
+                      </div>
+                      <div class="modal-slider flexslider">
+
+                        <ul class="slides">
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-02.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="body-holder">
+                      <h1>kid cudi music album.</h1>
+                      <div class="row row-body">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="desc">
+                            <h3>about project</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>client</h3>
+                            <p>BLAH Productions</p>
+                          </div>
+                          <div class="desc">
+                            <h3>project date</h3>
+                            <p>12 july 2014</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>share this project</h3>
+                            <ul class="share-icons">
+                              <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
+                              <li><a class="fa fa-twitter" href="#">twitter</a></li>
+                              <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mosaic-item modal-trigger colored" >
+              <div class="meta">
+                <div class="title">
+                 #save<br>
+                  Humanity.
+                </div>
+                <div class="short-tag">
+                  video
+                </div>
+              </div>
+               <div id="the-modal07" class="modal" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <a class="close-modal" href="#"></a>
+                    <div class="modal-slider-holder">
+                      <div class="flex-direction-nav">
+
+                        <a class="btn-prev" href="prev"></a>
+                        <a class="btn-next" href="next"></a>
+                      </div>
+                      <div class="modal-slider flexslider">
+
+                        <ul class="slides">
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-02.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="body-holder">
+                      <h1>#save Humanity.</h1>
+                      <div class="row row-body">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="desc">
+                            <h3>about project</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>client</h3>
+                            <p>BLAH Productions</p>
+                          </div>
+                          <div class="desc">
+                            <h3>project date</h3>
+                            <p>12 july 2014</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>share this project</h3>
+                            <ul class="share-icons">
+                              <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
+                              <li><a class="fa fa-twitter" href="#">twitter</a></li>
+                              <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mosaic-item modal-trigger small imaged"  >
+              <div class="image">
+                <img alt="" src="{{ 'services/work05.jpg' | theme_image_url }}">
+              </div>
+              <div class="meta">
+                <div class="title">
+                  apollo<br>
+                  campaign.
+                </div>
+                <div class="short-tag">
+                  digital art
+                </div>
+              </div>
+               <div id="the-modal08" class="modal" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <a class="close-modal" href="#"></a>
+                    <div class="modal-slider-holder">
+                      <div class="flex-direction-nav">
+
+                        <a class="btn-prev" href="prev"></a>
+                        <a class="btn-next" href="next"></a>
+                      </div>
+                      <div class="modal-slider flexslider">
+
+                        <ul class="slides">
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-02.jpg'  | theme_image_url }}" alt="" />
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="body-holder">
+                      <h1>apollo campaign.</h1>
+                      <div class="row row-body">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="desc">
+                            <h3>about project</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>client</h3>
+                            <p>BLAH Productions</p>
+                          </div>
+                          <div class="desc">
+                            <h3>project date</h3>
+                            <p>12 july 2014</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>share this project</h3>
+                            <ul class="share-icons">
+                              <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
+                              <li><a class="fa fa-twitter" href="#">twitter</a></li>
+                              <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 no-margin">
+            {% include 'card-video' with card_number: 2 %}
+            <div class="mosaic-item modal-trigger imaged"  >
+              <div class="image">
+                <img alt="" src="{{ 'services/work02.jpg'  | theme_image_url }}">
+              </div>
+              <div class="meta">
+                <div class="title">
+                  redesegin<br>
+                  Colonialism.
+                </div>
+                <div class="short-tag">
+                  branding
+                </div>
+              </div>
+               <div id="the-modal12" class="modal" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <a class="close-modal" href="#"></a>
+                    <div class="modal-slider-holder">
+                      <div class="flex-direction-nav">
+
+                        <a class="btn-prev" href="prev"></a>
+                        <a class="btn-next" href="next"></a>
+                      </div>
+                      <div class="modal-slider flexslider">
+
+                        <ul class="slides">
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-02.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="body-holder">
+                      <h1>redesegin Colonialism</h1>
+                      <div class="row row-body">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="desc">
+                            <h3>redesegin Colonialism</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>client</h3>
+                            <p>BLAH Productions</p>
+                          </div>
+                          <div class="desc">
+                            <h3>project date</h3>
+                            <p>12 july 2014</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>share this project</h3>
+                            <ul class="share-icons">
+                              <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
+                              <li><a class="fa fa-twitter" href="#">twitter</a></li>
+                              <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mosaic-item modal-trigger colored"  >
+              <div class="meta">
+                <div class="title">
+                  english man in<br>
+                  new york.
+                </div>
+                <div class="short-tag">
+                  photography
+                </div>
+              </div>
+               <div id="the-modal10" class="modal" >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <a class="close-modal" href="#"></a>
+                    <div class="modal-slider-holder">
+                      <div class="flex-direction-nav">
+
+                        <a class="btn-prev" href="prev"></a>
+                        <a class="btn-next" href="next"></a>
+                      </div>
+                      <div class="modal-slider flexslider">
+
+                        <ul class="slides">
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                          <li class="slide">
+                            <img src="{{ 'services/work-big-02.jpg' | theme_image_url }}" alt="" />
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="body-holder">
+                      <h1>redesegin Colonialism</h1>
+                      <div class="row row-body">
+                        <div class="col-xs-12 col-md-6">
+                          <div class="desc">
+                            <h3>redesegin Colonialism</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>client</h3>
+                            <p>BLAH Productions</p>
+                          </div>
+                          <div class="desc">
+                            <h3>project date</h3>
+                            <p>12 july 2014</p>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                          <div class="desc">
+                            <h3>share this project</h3>
+                            <ul class="share-icons">
+                              <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
+                              <li><a class="fa fa-twitter" href="#">twitter</a></li>
+                              <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <section class="content projects" id="grid-section">
       <div class="container">
@@ -29,7 +661,18 @@ editable_elements:
             <h1 class="gradient">Humble &amp; proud.</h1>
             <p>We are proud of our work but humble enough to know it is not perfect and it can always be improved. Just like a Whale, we like to stick around with our products (calfs) for a long enough time so we ensure that they are doing great.</p>
             <p>How we approach projects:</p>
-            <span>Icon</span>
+
+            <svg width="42px" height="42px" viewBox="141 2197 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+                <desc>Created with Sketch.</desc>
+                <defs>
+                    <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+                        <stop stop-color="#3023AE" offset="0%"></stop>
+                        <stop stop-color="#51B2F5" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path d="M161.891552,2238.7831 C173.429638,2238.7831 182.783104,2229.42964 182.783104,2217.89155 C182.783104,2206.35347 173.429638,2197 161.891552,2197 C150.353467,2197 141,2206.35347 141,2217.89155 C141,2229.42964 150.353467,2238.7831 161.891552,2238.7831 Z M170.845075,2218.22316 L156.254149,2210.9277 L156.254149,2225.51863 L170.845075,2218.22316 Z" id="Combined-Shape" stroke="none" fill="url(#linearGradient-1)" fill-rule="evenodd"></path>
+            </svg>
           </div>
         </div>
       </div>
@@ -37,7 +680,7 @@ editable_elements:
         <ul class="grid">
           {% for project in contents.projects %}
             <li class="grid__item">
-              <a class="grid__link" href="https://dribbble.com/fuviz"><div class="layer"></div><div class="layer"></div><div class="layer"></div><img class="grid__img layer" src="{{ project.cover_image.url }}" alt="01" /></a>
+              <a class="grid__link" href="https://dribbble.com/fuviz"><div class="layer"></div><div class="layer"></div><div class="layer"></div><div class="grid__img layer" style="background: url('{{ project.cover_image.url }}');" alt="01" /></a>
             </li>
           {% endfor %}
         </ul>
