@@ -146,11 +146,17 @@ h3{
   background-color: white;
 }
 
+.icon-arrow{
+  background: url('../images/icon_arrow.svg') no-repeat;
+  display: block;
+  height: auto;
+  width: 48px;
+}
 .content{
   padding: 100px;
 }
 
-.grid{
+.companies{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -202,6 +208,34 @@ h3{
   }
 }
 
+
+// ID FIXES
+
+#clients{
+  padding: 100px;
+}
+
+#services {
+    background-color: white;
+}
+
+#contact {
+    padding: 100px;
+    background-image: none;
+}
+
+header{
+  .top-menu-holder ul li:last-child {
+    margin: 0 18px;
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 29px;
+    vertical-align: middle;
+    font-weight: 800;
+  }
+}
+
 .whatif{
   background: #fff url("../images/team.png") no-repeat;
   background-size: cover;
@@ -230,7 +264,14 @@ h3{
   }
 }
 
+footer{
+  margin: 0px;
+}
+
 .footer{
+  h2{
+    line-height: 1.5em;
+  }
   input[type="text"]{
     background: transparent;
     border-top: transparent !important;
@@ -239,8 +280,40 @@ h3{
     border-bottom: 1px solid #3023AE !important;
     color: #3023AE;
     padding-left: 0;
+    width: 234px;
     box-shadow: none !important;
   }
+  input[type=submit] {
+    background: url('../images/icon_arrow.svg') no-repeat;
+    background-size: cover;
+    border: 0;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    margin-left: 10px;
+  }
+
+  div{
+    h2{
+      margin-bottom: 0px;
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+   color: #3023AE;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #3023AE;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #3023AE;
+}
+
+:-ms-input-placeholder {
+   color: #3023AE;
 }
 
 @media only screen and (min-width: 1200px) {
