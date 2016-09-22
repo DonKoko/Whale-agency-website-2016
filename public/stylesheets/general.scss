@@ -40,6 +40,9 @@ p{
   font-family: 'Libre Baskerville', serif;
 }
 
+.zoom-out {
+  zoom: 0.8;
+}
 
 .text-center{ text-align: center; }
 .text-right { text-align: right; }
@@ -86,10 +89,13 @@ p{
     }
   }
 
-  .card-date {
-    display: inline-block;
-    font-size: 10px;
-    color: #b2b2b2;
+  .card-meta {
+    height: 15%;
+    .card-date {
+      display: inline-block;
+      font-size: 10px;
+      color: #b2b2b2;
+    }
   }
 
   .video-card {

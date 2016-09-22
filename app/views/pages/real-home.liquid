@@ -15,12 +15,6 @@ editable_elements:
 
 {% block content %}
 
-  {% capture 'card_01' %}
-    {% editable_text "Card 01", hint: "Slug of entry to be displayed in Card 01", rows: 1 %}mega-dank-idea{% endeditable_text %}
-  {% endcapture %}
-
-  {% include 'card-post-image' with entry: card_01 %}
-
   <div class="wrapper">
     <section class="home-slider">
       <div class="flexslider homeslider">
@@ -46,7 +40,7 @@ editable_elements:
     </section>
     <div id="modalTemp" class="modal"></div>
     <section id="works">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="mosaic-holder">
           <div class="col-md-3 no-margin">
 
@@ -678,7 +672,7 @@ editable_elements:
     </section>
 
     <section class="content projects" id="grid-section">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="row">
           <div class="col-md-6">
             <h1 class="gradient">Humble &amp; proud.</h1>
@@ -699,7 +693,7 @@ editable_elements:
           </div>
         </div>
       </div>
-      <div class="isolayer isolayer--deco1 isolayer--shadow">
+      <div class="zoom-out isolayer isolayer--deco1 isolayer--shadow">
         <ul class="grid">
           {% for project in contents.projects %}
             <li class="grid__item">
@@ -726,7 +720,7 @@ editable_elements:
     </section>
 
     <section class="content organisations" id="clients">
-      <div class="container">
+      <div class="zoom-out container">
         <div class="row">
           <div class="col-md-6">
             <h1 class="gradient">Trusted by these organisations.</h1>
@@ -736,7 +730,7 @@ editable_elements:
           <div class="col-md-12">
             <div class="companies">
               {% for client in contents.clients %}
-                {{ client.name }}
+                
               {% endfor %}
               <div class="item"></div>
               <div class="item"></div>
@@ -753,7 +747,7 @@ editable_elements:
     </section>
 
     <section class="content services" id="services">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="row">
           <div class="col-md-12">
             <h3>Our services</h3>
@@ -816,7 +810,7 @@ editable_elements:
   </section>
 
   <section class="content whatif">
-    <div class="container">
+    <div class="container zoom-out">
       <div class="row">
         <div class="col-md-6">
           <h1 class="gradient">We believe in the power of what if?</h1>
@@ -836,7 +830,7 @@ editable_elements:
     </div>
   </section>
 
-{% include 'footer-contact' %}
+  {% include 'footer-contact' %}
 
 </div>
 
