@@ -7,3 +7,5 @@ data/
 log/
  
 .ruby-version
+
+Gemfile.lock
