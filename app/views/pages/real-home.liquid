@@ -7,13 +7,20 @@ listed: false
 published: true
 is_layout: false
 editable_elements:
-  content/heading: "Passionately curious"
+  content/heading: "<h3><br></h3><h3><br></h3><h3>Passionately curious</h3>"
   content/sub_heading: A digital product agency for the
   'content/label:': We work with a great happiness feel
 ---
 {% extends 'layouts/default' %}
 
 {% block content %}
+
+  {% capture 'card_01' %}
+    {% editable_text "Card 01", hint: "Slug of entry to be displayed in Card 01", rows: 1 %}mega-dank-idea{% endeditable_text %}
+  {% endcapture %}
+
+  {% include 'card-post-image' with entry: card_01 %}
+
   <div class="wrapper">
 
     {% include 'slider' %}
@@ -680,7 +687,22 @@ editable_elements:
         <ul class="grid">
           {% for project in contents.projects %}
             <li class="grid__item">
-              <a class="grid__link" href="https://dribbble.com/fuviz"><div class="layer"></div><div class="layer"></div><div class="layer"></div><div class="grid__img layer" style="background: url('{{ project.cover_image.url }}');" alt="01" /></a>
+              <a class="grid__link" href="https://dribbble.com/fuviz">
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer" style="background: url({{ Carlosthecreator.jpg }});
+                       background-size: cover;
+                       background-position: 50% 50%;
+                       background-repeat: no-repeat;
+                       opacity: 1;"></div>
+                <div class="grid__img layer"
+                     style="background: url({{ project.cover_image.url }});
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            background-repeat: no-repeat;
+                            opacity: 1;"></div>
+                <!-- <img class="grid__img layer" src="{{ project.cover_image.url }}" /> -->
+              </a>
             </li>
           {% endfor %}
         </ul>
@@ -697,6 +719,9 @@ editable_elements:
         <div clas="row">
           <div class="col-md-12">
             <div class="companies">
+              {% for client in contents.clients %}
+                {{ client.name }}
+              {% endfor %}
               <div class="item"></div>
               <div class="item"></div>
               <div class="item"></div>
