@@ -1,0 +1,25 @@
+---
+title: Whitepage layout
+slug: whitepage
+position: 99
+listed: false
+published: false
+is_layout: false
+---
+<!DOCTYPE html>
+<html>
+<html lang="en">
+  <head>
+    {% include head %}
+  </head>
+  <body>
+    {% include 'header_whitepage' %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include 'footer' %}
+    {% include 'framework' %}
+
+  </body>
+</html>

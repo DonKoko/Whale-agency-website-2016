@@ -2,11 +2,15 @@
 
 $grey: #585858;
 $lightblue: #80BAFF;
+$header: #2E3653;
 
 body{
   font-family: 'Libre Baskerville', serif;
   font-size: 18px;
   color: $grey;
+  -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+  zoom: 0.8; /* Other non-webkit browsers */
+  zoom: 80%; /* Webkit browsers */
 }
 
 h1{
@@ -14,6 +18,7 @@ h1{
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 25px;
+  color: $header;
 }
 
 h2{
@@ -21,6 +26,7 @@ h2{
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 25px;
+  color: $header;
 }
 
 h3{
@@ -28,6 +34,10 @@ h3{
   color: $lightblue;
   font-size: 18px;
   margin-bottom: 25px;
+}
+
+p{
+  font-family: 'Libre Baskerville', serif;
 }
 
 
@@ -44,6 +54,10 @@ h3{
   font-size: 64pt;
   letter-spacing: 0.85px;
   text-transform: none;
+}
+
+.big{
+  color: white;
 }
 
 .card {
@@ -196,7 +210,6 @@ h3{
   }
   div{
     padding: 50px;
-    border: 1px solid $grey;
     ul{
       margin-top: 50px;
       list-style-type: none;
@@ -208,6 +221,22 @@ h3{
   }
 }
 
+.table-header{
+  border: 1px solid $grey;
+}
+.table-left{
+  border-left: 1px solid $grey;
+  border-right: 1px solid $grey;
+}
+.table-center{
+  border-right: 1px solid $grey;
+}
+.table-right{
+  border-right: 1px solid $grey;
+}
+.table-footer{
+  border: 1px solid $grey;
+}
 
 // ID FIXES
 
@@ -250,10 +279,10 @@ header{
   }
 }
 
-.hover{
+.mailto{
   background-color: rgba(251,255,0,0.12);
   padding: 5px;
-  box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.25);
 }
 
 .contactinfo{
@@ -314,6 +343,96 @@ footer{
 
 :-ms-input-placeholder {
    color: #3023AE;
+}
+
+.white{
+  background: white;
+}
+
+
+
+// Portfolio Page
+
+.content-portfolio{
+  padding: 160px;
+}
+
+.tasks{
+  font-size: 20px;
+}
+
+.quote-text{
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.right{
+  float: right;
+}
+
+.contact-portfolio{
+  padding-top: 0px;
+  .stripe{
+    border-bottom: 4px solid $header;
+    width:40px;
+    margin: 0 auto 25px;
+  }
+  img{
+    float: right;
+    width: 100px;
+    height: auto;
+  }
+  p{
+    margin: 50px 0 50px 0;
+  }
+  .contactinfo{
+    margin: 10px 0 10px 0;
+  }
+  h4{
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 15px;
+    color: #151515;
+  }
+  h4, .contactinfo{
+    margin-bottom: 20px;
+  }
+}
+
+
+.stats{
+   background: linear-gradient(180deg, #F1F7FF 50%, white 50%);
+    .row:nth-child(2){
+       margin-top: 100px;
+     }
+    i{
+      color: $header;
+      margin-bottom: 20px;
+    }
+}
+
+.keepreading{
+  i{
+    color: $header;
+    margin-bottom: 20px;
+  }
+}
+
+
+.whitemenu{
+  li{
+    a{
+      color: $header !important;
+    }
+    .active{
+      border-bottom: 3px solid $header;
+    }
+  }
+}
+
+.factitem{
+  background: #F7F7F7;
+  padding: 20px;
 }
 
 @media only screen and (min-width: 1200px) {
