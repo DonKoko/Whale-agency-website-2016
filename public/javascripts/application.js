@@ -1,6 +1,3 @@
-$(document).ready(function(){
-});
-
 // Sticky Nav
 $(window).scroll(function(e) {
   var nav_anchor = $("header");
@@ -25,10 +22,10 @@ $(window).scroll(function(e) {
 
 
     nav_anchor.removeClass('narrow');
+    document.getElementById("logo").contentDocument.getElementById("logo").setAttribute("fill", "#2E3653");
 
   }
 });
-
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
