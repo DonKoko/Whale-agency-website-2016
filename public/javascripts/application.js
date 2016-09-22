@@ -1,4 +1,5 @@
-$(document).ready(function(){});
+$(document).ready(function(){
+});
 
 // Sticky Nav
 $(window).scroll(function(e) {
@@ -14,7 +15,7 @@ $(window).scroll(function(e) {
   if ($(this).scrollTop() >= 100)
   {
     nav_anchor.addClass('narrow');
-
+    document.getElementById("logo").contentDocument.getElementById("logo").setAttribute("fill", "white");
 
 
 
@@ -27,6 +28,7 @@ $(window).scroll(function(e) {
 
   }
 });
+
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {

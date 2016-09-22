@@ -8,9 +8,9 @@ body{
   font-family: 'Libre Baskerville', serif;
   font-size: 18px;
   color: $grey;
-  -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
-  zoom: 0.8; /* Other non-webkit browsers */
-  zoom: 80%; /* Webkit browsers */
+  // -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+  // zoom: 0.8; /* Other non-webkit browsers */
+  // zoom: 80%; /* Webkit browsers */
 }
 
 h1{
