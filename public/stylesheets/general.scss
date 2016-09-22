@@ -197,10 +197,16 @@ p{
   background-image: url("../images/whale_logo_blue.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 75%;
+  -webkit-filter: grayscale(100%);
+  filter: greyscale(100%);
   &:hover{
     background-image: url("../images/gif.gif");
     background-position:left;
     background-size: cover;
+    cursor: pointer;
+    -webkit-filter: grayscale(0%);
+    filter: greyscale(0%);
   }
 }
 

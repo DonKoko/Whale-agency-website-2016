@@ -77,3 +77,15 @@ fields:
     hint: A description of the relationship for the editors
     type: belongs_to
     class_name: home_cards
+
+- featured_client:
+    label: Feated client
+    hint: Should this client be featured in the 'Client' section of the homepage? If so, don't forget to add a GIF.
+    type: boolean
+    required: false
+
+- featured_gif:
+    label: Featured GIF
+    hint: If this client is featured on the homepage this GIF will be used for it's hover state.
+    type: file
+    required: false
