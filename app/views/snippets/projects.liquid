@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-6">
+    <h1 class="gradient">Humble &amp; proud.</h1>
+    <p>We are proud of our work but humble enough to know it is not perfect and it can always be improved. Just like a Whale, we like to stick around with our products (calfs) for a long enough time so we ensure that they are doing great.</p>
+    <p>How we approach projects:</p>
+
+    <svg width="42px" height="42px" viewBox="141 2197 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+                <stop stop-color="#3023AE" offset="0%"></stop>
+                <stop stop-color="#51B2F5" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path d="M161.891552,2238.7831 C173.429638,2238.7831 182.783104,2229.42964 182.783104,2217.89155 C182.783104,2206.35347 173.429638,2197 161.891552,2197 C150.353467,2197 141,2206.35347 141,2217.89155 C141,2229.42964 150.353467,2238.7831 161.891552,2238.7831 Z M170.845075,2218.22316 L156.254149,2210.9277 L156.254149,2225.51863 L170.845075,2218.22316 Z" id="Combined-Shape" stroke="none" fill="url(#linearGradient-1)" fill-rule="evenodd"></path>
+    </svg>
+  </div>
+</div>
+</div>
+<div class="isolayer isolayer--deco1 isolayer--shadow">
+<ul class="grid">
+  {% for project in contents.projects %}
+    <li class="grid__item">
+      <a class="grid__link" href="https://dribbble.com/fuviz">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="grid__img layer"
+             style="background: url({{ project.cover_image.url }});
+                    background-size: cover;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    opacity: 1;">
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

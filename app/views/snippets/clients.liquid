@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-6">
+    <h1 class="gradient">
+      {% editable_text "clients_heading", label: "Clients heading", hint: "Heading for the clients section", rows: 1, block: "Clients", format: raw %}
+        Trusted by these organisations.
+      {% endeditable_text %}
+    </h1>
+  </div>
+</div>
+
+<div clas="row">
+  <div class="col-md-12">
+    <div class="companies">
+      {% with_scope featured_client: true %}
+        {% for client in contents.clients %}
+          <div class="item" id="client{{ forloop.index }}"></div>
+          <style>
+          #client{{ forloop.index }} {
+          background-image: url({{ client.logo.url }});
+          }
+
+          #client{{ forloop.index }}:hover {
+          background-image: url({{ client.featured_gif.url }});
+          }
+          </style>
+        {% endfor %}
+      {% endwith_scope %}
+    </div>
+  </div>
+</div>

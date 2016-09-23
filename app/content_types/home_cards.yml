@@ -44,57 +44,19 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- position: # The lowercase, underscored name of the field
-    label: Position # Human readable name of the field
-    type: integer
+- card_type:
+    label: Card type
+    hint: Select a card type
+    type: select
+    select_option: ["Project", "Idea", "Client", "Image", "Milestone", "Publication"]
     required: true
-    hint: Explanatory text displayed in the back office
-    localized: false
 
-- clients:
-    label: Clients
-    hint: A description of the relationship for the editors
-    type: has_many
-    class_name: clients
-    inverse_of: home_card
-    ui_enabled: true
+- entry_url:
+    label: Entry URL
+    type: string
+    required: true
 
-- ideas:
-    label: Ideas
-    hint: A description of the relationship for the editors
-    type: has_many
-    class_name: ideas
-    inverse_of: home_card
-    ui_enabled: true
-
-- images:
-    label: Images
-    hint: A description of the relationship for the editors
-    type: has_many
-    class_name: images
-    inverse_of: home_card
-    ui_enabled: true
-
-- milestones:
-    label: Milestones
-    hint: A description of the relationship for the editors
-    type: has_many
-    class_name: milestones
-    inverse_of: home_card
-    ui_enabled: true
-
-- projects:
-    label: Projects
-    hint: A description of the relationship for the editors
-    type: has_many
-    class_name: projects
-    inverse_of: home_card
-    ui_enabled: true
-
-- publications:
-    label: Publications
-    hint: A description of the relationship for the editors
-    type: has_many
-    class_name: publications
-    inverse_of: home_card
-    ui_enabled: true
+- background-image:
+    label: Card background image
+    hint: Upload a background image here. For video posts, please upload a GIF.
+    type: file
