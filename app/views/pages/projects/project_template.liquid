@@ -1,84 +1,81 @@
 ---
-title: Portfolio Page
-published: true
-slug: portfolio-page
-handle: portfolio_page
+title: Project template page
+content_type: projects
 ---
-{% extends 'layouts/whitepage' %}
+{% extends "layouts/whitepage" %}
 
 {% block content %}
+
   <div class="wrapper">
     <section class="content-portfolio description white">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <h2 class="tasks">Concept, Design, Front-end en Back-end for</h2>
-            <h1>Condex Bulgaria</h1>
+            <h2 class="tasks">{{project.tasks}}</h2>
+            <h1>{{project.name}}</h1>
             <p>
-              We are proud of our work but humble enough to know it is not perfect and it can always be improved. Just like a Whale, we like to stick around with our products (calfs) for a long enough time so we ensure that they are doing great.
+              {{project.description}}
             </p>
         </div>
       </div>
     </section>
 
     <section class="content-portfolio photo">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <img src="../images/phones.png" alt="" />
+            <img src="{{project.image.url}}" />
         </div>
       </div>
     </section>
 
     <section class="content-portfolio quote white">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <p class="quote-text">
-              "Lorem ipsum dorom solet mipa cuchi babe wan tu tri pum pidum, lorem ipsum dorom solet mipa cuchi babe."
+              "{{project.quote}}"
             </p>
-            <span class="right">- Charles Dickingson</span>
+            <span class="right">~ {{project.quoter}}</span>
         </div>
       </div>
     </section>
 
     <section class="content-portfolio stats text-center">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <h2 class="text-center">Key Stats</h2>
             <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
-            <h1 class="text-center">500% increase in sales.</h1>
+            <h1 class="text-center">{{project.statstitle}}</h1>
             <p class="text-center">
-              Lorem ipsum dorom solet mipa cuchi babe wan tu tri pum pidum, lorem ipsum dorom solet mipa cuchi babe.
+              {{project.statsdescription}}
             </p>
-            <img src="../images/ac-service.png" alt="" />
+            <img src="{{project.statimage.url}}" />
         </div>
       </div>
       <div class="row">
         <div class="col-md-3 factitem">
-          <h2>95%</h2>
+          <h2>{{project.stat1title}}</h2>
+            {{project.stat1content}}
+        </div>
+        <div class="col-md-3 col-md-offset-1 factitem">
+          <h2>{{project.stat2title}}</h2>
           <p>
-            Growth on sales
+            {{project.stat2content}}
           </p>
         </div>
         <div class="col-md-3 col-md-offset-1 factitem">
-          <h2>5 minutes</h2>
+          <h2>{{project.stat3title}}</h2>
           <p>
-            Average time on site
-          </p>
-        </div>
-        <div class="col-md-3 col-md-offset-1 factitem">
-          <h2>2,5% to 5%</h2>
-          <p>
-            Conversion rate
+            {{project.stat3content}}
           </p>
         </div>
       </div>
     </section>
 
     <section class="content-portfolio contact-portfolio white">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="row">
           <div class="col-md-12">
             <div class="stripe"></div>
@@ -97,7 +94,9 @@ handle: portfolio_page
           <img src="../images/carlos.png" width="150"class="img-circle" alt="" />
         </div>
         <div class="col-md-4">
-          <h4>Carlos Virreira, Commercial Director</h4>
+          <h4>
+              Carlos Virreira, Commercial Director
+          </h4>
           <p class="contactinfo"><a href="mailto:carlos@whale-agency.com">carlos@whale-agency.com</a></p>
           <p class="contactinfo"><a href="tel:+31(6)5453206">+31(6)5453206</a></p>
         </div>
@@ -105,7 +104,7 @@ handle: portfolio_page
     </section>
 
     <section class="content-portfolio keepreading">
-      <div class="container">
+      <div class="container zoom-out">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <h2>Keep reading</h2>

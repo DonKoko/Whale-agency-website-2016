@@ -65,9 +65,3 @@ fields:
     class_name: authors
     inverse_of: publications
     ui_enabled: true
-
-- home_card:
-    label: Home card
-    hint: A description of the relationship for the editors
-    type: belongs_to
-    class_name: home_cards

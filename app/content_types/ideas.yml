@@ -93,9 +93,3 @@ fields:
     class_name: images
     inverse_of: idea
     ui_enabled: true
-
-- home_card:
-    label: Home card
-    hint: A description of the relationship for the editors
-    type: belongs_to
-    class_name: home_cards
