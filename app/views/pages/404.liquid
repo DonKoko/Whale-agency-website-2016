@@ -9,19 +9,36 @@ editable_elements:
   content/jumbotron: |-
     <h1 class="text-danger">Arrggggh, page not found</h1>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
 ---
-{% extends 'layouts/default' %}
+{% extends 'layouts/errorpage' %}
 
 {% block content %}
 
-<div class="container">
-  <div class="jumbotron">
-    {% editable_text jumbotron, rows: 5, priority: 1 %}
-      <h1 class="text-danger">Arrggggh, page not found</h1>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    {% endeditable_text %}
+<div class="wrapper full-height">
+
+  <section style="margin-top: -50px;">
+    <div class="zoom-out container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h1 class="gradient">404 | Whale not found.</h1>
+            <p>Uh oh, looks like you got beached.</p>
+            <p>No worries, we've got your back. You can go back to the homepage to keep swimming.</p>
+            <br>
+            <a class="btn-404-wrap" href="/">
+              <h2 class="btn-404 gradient">GO HOME</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="travoltaWrapper">
+    <img id="travolta" src="{{ 'travolta.gif' | theme_image_url }}"/>
   </div>
+
 </div>
 
 {% endblock %}
-
