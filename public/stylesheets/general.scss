@@ -37,6 +37,7 @@ h3 {
 
 p {
   font-family: 'Libre Baskerville', serif;
+  line-height: 1.7em;
 }
 
 .zoom-out {
@@ -123,6 +124,11 @@ p {
     bottom: 15px;
     left: 10px;
     position: absolute;
+  }
+
+  .image {
+    background-size: cover;
+    height: 400px;
   }
 }
 
@@ -477,6 +483,11 @@ footer{
   justify-content: center;
 }
 
+// .error-bg {
+//   background-image: url(http://i.giphy.com/l2Sq5MzQo3krT7e5W.gif);
+//   background-size: cover;
+// }
+
 .btn-404-wrap {
   &:hover {
     .btn-404 {
@@ -504,6 +515,7 @@ footer{
   -webkit-transition: -webkit-text-fill-color 0.3s;
 }
 
+
 @media only screen and (min-width: 1200px) {
   .card {
     min-height: 400px;
@@ -528,6 +540,11 @@ footer{
   }
   .push-below-header {
     margin-top: 133px;
+  }
+  .card {
+    .image {
+      height: 300px;
+    }
   }
 }
 

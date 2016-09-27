@@ -1,15 +1,16 @@
-<div class="card mosaic-item modal-trigger colored" id="card-{{ card_number }}">
+<div class="card mosaic-item modal-trigger colored {% if smallcard == true %}small{% endif %}" id="card-{{ card_number }}">
 <div class="meta">
   <div class="card-meta">
     <div class="short-tag gradient">
-      branding
+      {{ card.category }}
     </div>
     <span class="card-date">
       / 6.2.2016
+      {{ card.date |  }}
     </span>
   </div>
   <div class="title">
-    <h2 class="gradient">Values we live by.</h2>
+    <h2 class="gradient">{{ card.title }}</h2>
   </div>
 </div>
     <div id="the-modal02" class="modal" >

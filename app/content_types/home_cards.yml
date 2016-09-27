@@ -59,6 +59,20 @@ fields:
     hint: Paste the link the post relates to
     localized: false
 
+- category:
+    label: Card category
+    type: string
+    required: false
+    hint: The category of the post that will be displayed above or below the title.
+    localized: false
+
+- date:
+    label: Post date
+    type: date
+    required: false
+    hint: The date that will be displayed as the date of posting on the card.
+    localized: false
+
 - video: # The lowercase, underscored name of the field
     label: Video # Human readable name of the field
     type: boolean

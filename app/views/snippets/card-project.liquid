@@ -1,15 +1,14 @@
-<div class="card mosaic-item modal-trigger imaged" id="card-{{ card_number }}">
-  <div class="image">
-    <img alt="" src="{{ 'services/work01.jpg' | theme_image_url }}">
+<div class="card mosaic-item modal-trigger imaged {% if smallcard == true %}small{% endif %}" id="card-{{ card_number }}">
+  <div class="image" style="background-image: url({{ card.background_content.url }});">
+    <!-- <img alt="" src="{{ card.background_content.url }}"> -->
   </div>
   <div class="meta">
-
+    <div class="card-meta"></div>
     <div class="title">
-      planet of the<br>
-      apes.
+      {{ card.title }}
     </div>
     <div class="short-tag">
-      motion graphic
+      {{ card.category }}
     </div>
   </div>
   <div id="the-modal01" class="modal" >
