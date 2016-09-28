@@ -1,79 +1,21 @@
-
-<div onmouseenter="playCard({{ card_number }})" onmouseout="pauzeCard({{ card_number }})" class="card modal-trigger imaged {% if smallcard == true %}small{% endif %}" id="card-{{ card_number }}">
+<div onclick="openVidCard({{ card_number }})" onmouseenter="playCard({{ card_number }})" onmouseout="pauzeCard({{ card_number }})" class="video-card card imaged {% if smallcard == true %}small{% endif %}" id="card-{{ card_number }}">
   <div class="playIcon">
     <svg width="39px" height="39px" viewBox="22 289 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M41.5,328 C52.2695526,328 61,319.269553 61,308.5 C61,297.730447 52.2695526,289 41.5,289 C30.7304474,289 22,297.730447 22,308.5 C22,319.269553 30.7304474,328 41.5,328 Z M49.8571429,308.809524 L36.2380952,302 L36.2380952,315.619048 L49.8571429,308.809524 Z" id="Combined-Shape" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
     </svg>
   </div>
-  <div class="image video-card">
+
+  <div class="video-card">
     <img id="card-thumb-{{ card_number }}" alt="" src="{{ 'services/work02.jpg' | theme_image_url }}">
     <video loop id="video-card-{{ card_number }}" class="thevideo" preload="auto">
       <source src="{{ card.background_content.url }}" type="video/mp4">
-        <!-- <img src="https://media.giphy.com/media/3o7qDYNtT3wVzczm8M/giphy.gif" width="400" height="300" /> -->
       Your browser does not support the video tag.
     </video>
   </div>
-  <div id="the-modal03" class="modal" >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <a class="close-modal" href="#"></a>
-        <div class="modal-slider-holder">
-          <div class="flex-direction-nav">
 
-            <a class="btn-prev" href="prev"></a>
-            <a class="btn-next" href="next"></a>
-          </div>
-          <div class="modal-slider flexslider">
-
-            <ul class="slides">
-              <li class="slide">
-                <img src="{{ 'services/work-big-01.jpg' | theme_image_url }}" alt="" />
-              </li>
-              <li class="slide">
-                <img src="{{ 'services/work-big-02.jpg' | theme_image_url }}" alt="" />
-              </li>
-            </ul>
-
-          </div>
-        </div>
-
-        <div class="body-holder">
-          <h1>redesegin space</h1>
-          <div class="row row-body">
-            <div class="col-xs-12 col-md-6">
-              <div class="desc">
-                <h3>about project</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-md-3">
-              <div class="desc">
-                <h3>client</h3>
-                <p>BLAH Productions</p>
-              </div>
-              <div class="desc">
-                <h3>project date</h3>
-                <p>12 july 2014</p>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-md-3">
-              <div class="desc">
-                <h3>share this project</h3>
-                <ul class="share-icons">
-                  <li><a class="fa fa-facebook-square" href="#">facebook</a></li>
-                  <li><a class="fa fa-twitter" href="#">twitter</a></li>
-                  <li><a class="fa fa-pinterest-square" href="#">pinterest</a></li>
-                </ul>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="rb-overlay">
+    <span class="rb-close" onclick="closeVidCard({{ card_number }})">close</span>
+    <iframe id="video-{{ card_number }}" style="margin: 2.5% auto;" width="90%" height="80%" src="https://www.youtube.com/embed/c3EQDfqqHsI?rel=0" frameborder="0" allowfullscreen></iframe>
+    <h1 class="gradient">{{ card.title }}</h1>
   </div>
 </div>

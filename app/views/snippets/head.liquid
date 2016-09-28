@@ -22,7 +22,12 @@
 
 {% if page.handle == "home" %}
   {{ 'plugins/isometric-grid/component.css'               | stylesheet_tag }}
+
+  {{ 'plugins/horizontal-timeline/modernizr.js'           | javascript_tag }}
+
+  {{ 'plugins/expanding-overlay/component.css'            | stylesheet_tag }}
+  {{ 'plugins/expanding-overlay/climacons.css'            | stylesheet_tag }}
+  {{ 'plugins/expanding-overlay/modernizr.custom.js'      | javascript_tag }}
 {% endif %}
 
-{{ 'plugins/horizontal-timeline/modernizr.js'             | javascript_tag }}
 {{ 'custom.js'                                            | javascript_tag }}

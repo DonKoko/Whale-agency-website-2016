@@ -21,5 +21,13 @@ is_layout: true
     {% include 'footer' %}
     {% include 'framework' %}
 
+    {% if page.handle == "home" %}
+      <script>
+        $(function() {
+          Boxgrid.init();
+        });
+      </script>
+    {% endif %}
+
   </body>
 </html>
