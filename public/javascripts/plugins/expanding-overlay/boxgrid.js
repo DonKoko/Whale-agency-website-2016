@@ -65,7 +65,6 @@ var Boxgrid = (function() {
 		// apply fittext plugin
 		// $items.find( 'div.rb-week > div span' ).fitText( 0.3 ).end().find( 'span.rb-city' ).fitText( 0.5 );
 		initEvents();
-		console.log('init');
 	}
 
 	function initEvents() {
@@ -76,12 +75,9 @@ var Boxgrid = (function() {
 				$close = $item.find( 'span.rb-close' ),
 				$overlay = $item.children( 'div.rb-overlay' );
 
-				console.log(this);
-
 			$item.on( 'click', function() {
 
 				$('header').css('z-index', '500');
-				console.log('open');
 
 				if( $item.data( 'isExpanded' ) ) {
 					return false;
@@ -120,6 +116,17 @@ var Boxgrid = (function() {
 				}
 
 			} );
+
+			$(document).keydown(function(e) {
+    		if (e.keyCode == 27) {
+					var currentVid = $overlay.find('card-');
+					console.log(currentVid);
+					if (currentlyOpen == 0) {
+						// $($close).click();
+					}
+					// alert(currentlyOpen);
+    		}
+			});
 
 			$close.on( 'click', function() {
 

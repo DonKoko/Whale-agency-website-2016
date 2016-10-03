@@ -1,3 +1,5 @@
+var currentlyOpen = 0;
+
 function playCard(number) {
   var id = ""
   var thumb = ""
@@ -14,15 +16,35 @@ function pauzeCard(number){
 }
 
 function openVidCard(number) {
-  $("#video-" + number)[0].src += "&autoplay=1";
+  if (currentlyOpen == 0) {
+    $("#video-" + number)[0].src += "&autoplay=1";
+    currentlyOpen = number;
     ev.preventDefault();
+  }
 }
 
 function closeVidCard(number) {
-  setTimeout(function() {
-    var url = $("#video-" + number).attr('src');
-    $("#video-" + number).attr('src', '');
-    url = url.replace('&autoplay=1','');
-    $("#video-" + number).attr('src', url);
-  }, 800);
+  if (currentlyOpen != 0) {
+    setTimeout(function() {
+      var url = $("#video-" + number).attr('src');
+      $("#video-" + number).attr('src', '');
+      url = url.replace('&autoplay=1','');
+      $("#video-" + number).attr('src', url);
+    }, 800);
+    currentlyOpen = 0;
+  }
 }
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    var isEscape = false;
+    if ("key" in evt) {
+        isEscape = (evt.key == "Escape" || evt.key == "Esc");
+    } else {
+        isEscape = (evt.keyCode == 27);
+    }
+    if (isEscape) {
+      // alert(currentlyOpen);
+      closeVidCard(currentlyOpen);
+    }
+};

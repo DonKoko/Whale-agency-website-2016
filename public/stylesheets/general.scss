@@ -2,6 +2,7 @@
 
 $grey: #585858;
 $lightblue: #80BAFF;
+$blue_overlay: #222945;
 $header: #2E3653;
 
 /*#3023AE, #52B2F4*/
@@ -71,32 +72,28 @@ p {
   transition: all .3s ease;
   overflow: hidden;
 
-  &:before {
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    z-index: 200;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #222945;
-    position: absolute;
-    top: 0;
-    opacity: 0.5
-  }
-
   &:hover {
     cursor: pointer;
-    &:before {
+    .video-card:before {
       opacity: 0;
     }
   }
 
-  .card-meta {
-    height: 15%;
-    .card-date {
-      display: inline-block;
-      font-size: 10px;
-      color: #b2b2b2;
+  .meta {
+    .card-meta {
+      height: 15%;
+      .card-date {
+        display: inline-block;
+        font-size: 10px;
+        color: #b2b2b2;
+      }
+    }
+    .title {
+      margin-bottom: 10%;
+    }
+    .short-tag {
+      display: inline;
+      font-size: 20px;
     }
   }
 
@@ -107,6 +104,18 @@ p {
     width: 200%;
     height: 200%;
     z-index: -1;
+    &:before {
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      z-index: 200;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $blue_overlay;
+      position: absolute;
+      top: 0;
+      opacity: 0.5;
+    }
     .thevideo {
       height: 100%;
       position: absolute;
@@ -155,19 +164,20 @@ p {
   text-align: left;
   width: 80%;
   height: 90%;
+  z-index: 400;
 }
 
 .mosaic-holder .mosaic-item .meta:before {
   display: none;
 }
 
+.mosaic-holder .mosaic-item:before {
+  opacity: 0.5;
+}
+
 .isolayer--deco1 {
   height: 1200px !important;
   zoom: 0.9;
-}
-
-.short-tag {
-  display: inline;
 }
 
 .projects, .services, .whatif, .contact{

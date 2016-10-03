@@ -5,6 +5,8 @@
     </svg>
   </div>
 
+  {% assign yt_link = card.post_url %}
+
   <div class="video-card">
     <img id="card-thumb-{{ card_number }}" alt="" src="{{ 'services/work02.jpg' | theme_image_url }}">
     <video loop id="video-card-{{ card_number }}" class="thevideo" preload="auto">
@@ -15,7 +17,7 @@
 
   <div class="rb-overlay">
     <span class="rb-close" onclick="closeVidCard({{ card_number }})">close</span>
-    <iframe id="video-{{ card_number }}" style="margin: 2.5% auto;" width="90%" height="80%" src="https://www.youtube.com/embed/c3EQDfqqHsI?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe id="video-{{ card_number }}" style="margin: 2.5% auto;" width="90%" height="80%" src="https://www.youtube.com/embed/{{ yt_link | split: 'https://www.youtube.com/watch?v=' }}?rel=0" frameborder="0" allowfullscreen></iframe>
     <h1 class="gradient">{{ card.title }}</h1>
   </div>
 </div>
