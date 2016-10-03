@@ -117,17 +117,6 @@ var Boxgrid = (function() {
 
 			} );
 
-			$(document).keydown(function(e) {
-    		if (e.keyCode == 27) {
-					var currentVid = $overlay.find('card-');
-					console.log(currentVid);
-					if (currentlyOpen == 0) {
-						// $($close).click();
-					}
-					// alert(currentlyOpen);
-    		}
-			});
-
 			$close.on( 'click', function() {
 
 				$('header').css('z-index', '1000');

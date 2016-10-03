@@ -323,8 +323,15 @@ header {
 .contactinfo{
   color: black;
   font-weight: bold;
-  a{
+  a {
     color: black;
+    transition: none;
+    &:hover {
+      background: -webkit-linear-gradient(125deg, #3023AE, #52B2F4);
+    	background: linear-gradient(125deg, #3023AE, #52B2F4);
+    	-webkit-background-clip: text;
+    	-webkit-text-fill-color: transparent;
+    }
   }
 }
 
