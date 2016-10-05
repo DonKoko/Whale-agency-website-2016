@@ -7,19 +7,27 @@ published: false
 is_layout: true
 ---
 <!DOCTYPE html>
-<html>
 <html lang="en">
   <head>
     {% include head %}
   </head>
+
   <body>
-    {% include 'header' %}
+
+    <header>
+      {% include 'header' %}
+    </header>
 
     {% block content %}
+    <!-- RENDER CONTENT HERE -->
     {% endblock %}
 
-    {% include 'footer' %}
-    {% include 'framework' %}
+    <footer>
+      {% comment %}
+      {% include 'footer' %}
+      {% endcomment %}
+      {% include 'framework' %}
+    </footer>
 
     {% if page.handle == "home" %}
       <script>
@@ -28,6 +36,5 @@ is_layout: true
         });
       </script>
     {% endif %}
-
   </body>
 </html>

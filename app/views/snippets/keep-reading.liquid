@@ -1,0 +1,21 @@
+<div class="mosaic-holder">
+  {% for card in contents.home_cards %}
+
+    <div class="col-md-3 {% if forloop.index == 2 or forloop.index == 3 %} middle-row {% endif %} no-margin">
+
+    {% if card.video == true %}
+      {% include 'card-video' with card: card, card_number: forloop.index, smallcard: smallcard %}
+    {% elsif card.card_type == "Project" %}
+      {% include 'card-project' with card: card, card_number: forloop.index, smallcard: smallcard %}
+    {% else %}
+      {% include 'card-post' with card: card, card_number: forloop.index, smallcard: smallcard %}
+    {% endif %}
+
+    </div>
+
+    {% if forloop.index == 4 %}
+     {% break %}
+   {% endif %}
+
+  {% endfor %}
+</div>

@@ -41,9 +41,8 @@ p {
   line-height: 1.7em;
 }
 
-.zoom-out {
-  // zoom: 0.8; /* Non webkit browsers */
-  // zoom: 80%; /* Webkit browsers */
+.container {
+  width: auto;
 }
 
 .text-center{ text-align: center; }
@@ -51,10 +50,60 @@ p {
 .text-left { text-align: left; }
 .text-white { color: white; }
 .text-half-white { color: rgba(255,255,255,.5); }
-.home-slider .flexslider .flex-caption .small {
-  font-size: 18pt;
-  text-transform: none;
+// .home-slider .flexslider .flex-caption .small {
+//   font-size: 18pt;
+//   text-transform: none;
+// }
+
+.gradient {
+  background: -webkit-linear-gradient(125deg, #3023AE, #52B2F4);
+	background: linear-gradient(125deg, #3023AE, #52B2F4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
 }
+
+#jumbo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 50vmax;
+  width: 100%;
+  &:before {
+    content: '';
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+    background-image: linear-gradient(to top , #3023AE, #52B2F4);
+    opacity: .4;
+  }
+  .white-noise {
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('../images/white-noise.gif');
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.08;
+    }
+  }
+  #jumbo-heading {
+    position: absolute;
+    width: 100%;
+    margin-top: 22.5vmax;
+    overflow: hidden;
+    height: 50px;
+    line-height: 40px;
+  }
+}
+#works { padding: 7vmax; margin-top: -15vmax; }
+#grid-section { padding: 7vmax; }
+#services { padding: 7vmax; }
+#about { padding: 7vmax; }
+#team { padding: 7vmax; }
 
 .home-slider .flexslider .flex-caption .big {
   font-size: 64pt;
@@ -137,7 +186,7 @@ p {
 
   .image {
     background-size: cover;
-    height: 400px;
+    height: 325px;
   }
 }
 
@@ -147,19 +196,13 @@ p {
   height: 100vh;
   min-height: 800px;
   max-height: 1200px;
-  padding: 7vmax;
   background-color: white;
 }
 
-.gradient {
-  background: -webkit-linear-gradient(125deg, #3023AE, #52B2F4);
-	background: linear-gradient(125deg, #3023AE, #52B2F4);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  -webkit-font-smoothing: antialiased;
-}
-
 // OVERRIDES //
+.mosaic-holder .mosaic-item {
+  min-height: 325px;
+}
 .mosaic-holder .mosaic-item .meta {
   text-align: left;
   width: 80%;
@@ -184,6 +227,10 @@ p {
   background-color: white;
 }
 
+.cd-horizontal-timeline {
+  margin: 0 auto !important;
+}
+
 .icon-arrow {
   background: url('../images/icon_arrow.svg') no-repeat;
   display: block;
@@ -205,8 +252,8 @@ p {
 }
 
 .item {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 1px solid #979797;
   border-radius: 2px;
   margin: 0 20px 40px 0;
@@ -548,9 +595,9 @@ footer{
 
 @media only screen and (min-width: 1200px) {
   .card {
-    min-height: 400px;
+    min-height: 325px;
     .playIcon {
-      min-height: 400px;
+      min-height: 325px;
     }
   }
   .push-below-header {
@@ -645,4 +692,46 @@ footer{
 	line-height: 0.6;
 	text-align: center;
 	text-indent: 0px;
+}
+
+#jumbolist {
+  margin-top:0;
+  list-style:none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  .jumbo-li {
+    margin-bottom: 50px !important;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
 }

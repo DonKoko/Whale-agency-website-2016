@@ -108,19 +108,26 @@ content_type: projects
       </div>
     </section>
 
+    {% comment %}
+      This DIV takes care of the card modals. Do not remove
+    {% endcomment %}
+    <div id="modalTemp" class="modal"></div>
+
     <section class="content-portfolio keepreading">
       <div class="container zoom-out">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <h2>Keep reading</h2>
             <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+          </div>
         </div>
+
+        {% include 'keep-reading' %}
+
       </div>
-    </div>
     </section>
     {% include 'footer-contact' %}
   </div>
 </div>
 
 {% endblock %}
-

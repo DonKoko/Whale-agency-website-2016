@@ -5,8 +5,7 @@
       {{ card.category }}
     </div>
     <span class="card-date">
-      / 6.2.2016
-      {{ card.date |  }}
+      {{ card.date | format_date: "/ %-d.%m.%Y" }}
     </span>
   </div>
   <div class="title">
