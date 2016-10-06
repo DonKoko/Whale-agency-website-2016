@@ -87,7 +87,7 @@ p {
       position: absolute;
       width: 100%;
       height: 100%;
-      opacity: 0.08;
+      opacity: 0.03;
     }
   }
   #jumbo-heading {
@@ -99,7 +99,7 @@ p {
     line-height: 40px;
   }
 }
-#works { padding: 7vmax; margin-top: -15vmax; }
+#works { padding: 7vmax; padding-bottom: 0; margin-top: -14vmax; }
 #grid-section { padding: 7vmax; }
 #services { padding: 7vmax; }
 #about { padding: 7vmax; }
@@ -148,6 +148,7 @@ p {
 
   .video-card {
     position: absolute;
+    margin: auto -1px auto 1px;
     top: -50%;
     left: -70%;
     width: 200%;
@@ -186,8 +187,20 @@ p {
 
   .image {
     background-size: cover;
+    background-position: center;
     height: 325px;
   }
+}
+
+.card-post:hover {
+    .gradient {
+      -webkit-text-fill-color: #FFF;
+      transition: none;
+    }
+}
+
+.milestone-p {
+  margin-top: 15px !important;
 }
 
 #grid-section {
@@ -202,6 +215,10 @@ p {
 // OVERRIDES //
 .mosaic-holder .mosaic-item {
   min-height: 325px;
+}
+.mosaic-holder .mosaic-item.small {
+  min-height: 225px;
+  height: 225px;
 }
 .mosaic-holder .mosaic-item .meta {
   text-align: left;
@@ -332,14 +349,17 @@ p {
 }
 
 header {
-  .top-menu-holder ul li:last-child {
+  ul {
+    margin-top: 10px;
+  }
+  .top-menu-holder ul li {
     margin: 0 18px;
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 1.5px;
     line-height: 29px;
     vertical-align: middle;
-    font-weight: 800;
+    font-weight: 500;
   }
 }
 

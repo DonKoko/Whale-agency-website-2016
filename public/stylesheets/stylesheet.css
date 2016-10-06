@@ -7172,27 +7172,20 @@ header .top-menu-holder ul li:first-child {
     margin: 0 18px 0 0
 }
 
-header .top-menu-holder ul li:last-child {
-    margin: 0;
-    font-size: 28px;
-    line-height: 33px;
-    vertical-align: middle
-}
-
 header .top-menu-holder ul li.active a {
-    border-bottom: 3px solid #fff
+    border-bottom: 2px solid #fff
 }
 
 header .top-menu-holder ul li a {
-    border-bottom: 3px solid transparent;
-    padding: 0 0 4px 0;
+    border-bottom: 2px solid transparent;
+    padding: 0;
     color: #0f0f10;
     text-transform: uppercase
 }
 
 header .top-menu-holder ul li a:hover,
 header .top-menu-holder ul li a:focus {
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     background-color: transparent
 }
 

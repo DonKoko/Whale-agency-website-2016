@@ -1,4 +1,7 @@
-<div class="card mosaic-item modal-trigger colored {% if smallcard == true %}small{% endif %}" id="card-{{ card_number }}">
+<div class="card card-post mosaic-item modal-trigger colored {% if smallcard == true %}small{% endif %}" id="card-{{ card_number }}">
+  <div class="image" style="background-image: url({{ card.background_content.url }});">
+    <!-- <img alt="" src="{{ card.background_content.url }}"> -->
+  </div>
 <div class="meta">
   <div class="card-meta">
     <div class="short-tag gradient">

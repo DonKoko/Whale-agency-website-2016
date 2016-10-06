@@ -28,7 +28,7 @@
           <li class="{% if forloop.first %}selected{% endif %}" data-date="{{ milestone.date | date: '%d/%m/%Y' }}">
             <h1 class="gradient">{{ milestone.title }}</h1>
             <h3>{{ milestone.date | format_date: "%B, %Y" }}</h3>
-            <p>{{ milestone.description }}</p>
+            <div class="milestone-p">{{ milestone.description }}</div>
           </li>
           {% endfor %}
         </ol>

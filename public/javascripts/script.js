@@ -294,7 +294,7 @@ $('.close-modal').click(function(event) {
 
 
     $('html, body').stop().animate({
-      scrollTop: $(destSection).offset().top - 60
+      scrollTop: $(destSection).offset().top
     }, 2000, 'easeInOutExpo');
 
   }

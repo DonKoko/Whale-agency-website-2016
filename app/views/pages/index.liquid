@@ -7,17 +7,23 @@ editable_elements:
   content/sub_heading: A digital product agency for the
   content/heading: Passionately curious
   Clients/clients_heading: Trusted by these organisations.
+  Jumbotron/jumbo_heading: 'Stay #000000 for life'
+  Jumbotron/jumbotron: "/samples/pages/brave-merida-hi-res.jpg"
 ---
 {% extends 'layouts/default' %}
 
 {% block content %}
 
   <div class="wrapper">
-    
-    <section id="jumbo" style="background-image: url('{{ 'Carlosthecreator.jpg' | theme_image_url }}');">
+    <!-- <section id="jumbo" style="background-image: url('https://hd.unsplash.com/photo-1454991727061-be514eae86f7');"> -->
+    <section id="jumbo" style="background-image: url('{% editable_file 'jumbotron', block: 'Jumbotron' %}/samples/content_entries/Carlosthecreator.jpg{% endeditable_file %}');">
       <div class="white-noise"></div>
       <div id="jumbo-heading" class="text-center">
-        <h1 class="text-white">The #dankest whales in town!</h1>
+        <h1 class="text-white">
+          {% editable_text "jumbo_heading", label: "Jumbotron heading", hint: "Heading for the jumbotron", rows: 1, block: "Jumbotron", format: raw %}
+            The Dawn of #Dankness
+          {% endeditable_text %}
+        </h1>
       </div>
     </section>
 
