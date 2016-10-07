@@ -1,20 +1,35 @@
-<div class="card card-post mosaic-item modal-trigger colored {% if smallcard == true %}small{% endif %}" id="card-{{ card_number }}">
-  <div class="image" style="background-image: url({{ card.background_content.url }});">
-    <!-- <img alt="" src="{{ card.background_content.url }}"> -->
-  </div>
-<div class="meta">
-  <div class="card-meta">
-    <div class="short-tag gradient">
-      {{ card.category }}
+<div class="card mosaic-item modal-trigger
+            {% if smallcard == true %}small{% endif %}
+            {% if card.background_content.url %}imaged{% else %}card-no-bg{% endif %}"
+            id="card-{{ card_number }}">
+
+  {% if card.background_content.url %}
+    <div class="image" style="background-image: url({{ card.background_content.url }});"></div>
+  {% endif %}
+
+  <div class="meta">
+    <div class="card-meta">
+      <div class="short-tag
+                  {% if card.background_content.url %}
+                  text-white{% else %}gradient
+                  {% endif %}">
+        {{ card.card_type }}s
+      </div>
+      <span class="card-date {% if card.background_content.url %}date-white{% endif %}">
+        {% if card.card_type == "Milestone" or card.card_type == "Publication" %}
+          {{ card.date | format_date: "/ %-d.%m.%Y" }}
+        {% else %}
+          / {{ card.category | capitalize }}
+        {% endif %}
+      </span>
     </div>
-    <span class="card-date">
-      {{ card.date | format_date: "/ %-d.%m.%Y" }}
-    </span>
+    <div class="title">
+      <h2 class="{% if card.background_content.url %}
+                text-white{% else %}gradient
+                {% endif %}">{{ card.title }}</h2>
+    </div>
   </div>
-  <div class="title">
-    <h2 class="gradient">{{ card.title }}</h2>
-  </div>
-</div>
+
     <div id="the-modal02" class="modal" >
   <div class="modal-dialog">
     <div class="modal-content">

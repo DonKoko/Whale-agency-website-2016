@@ -87,4 +87,4 @@ if(!mobile){
 };
 }( jQuery ));
 
-jQuery("#jumbo").tinyparallax(); 
+jQuery("#jumbo").tinyparallax();

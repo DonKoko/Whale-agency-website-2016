@@ -47,7 +47,7 @@ fields:
 - card_type:
     label: Card type
     type: select
-    select_options: ["Client", "Idea", "Image", "Milestone", "Project", "Publication"]
+    select_options: ["Client", "Idea", "Image", "Milestone", "Project", "Publication", "Experiment"]
     required: true
     hint: Select the type of post this card relates to
     localized: false

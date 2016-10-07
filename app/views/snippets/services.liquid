@@ -1,21 +1,37 @@
 <div class="row">
   <div class="col-md-10 col-md-offset-1">
-    <h3>Our services</h3>
+    <h3>
+      {% editable_text "services_heading", label: "Services heading", hint: "Heading for the services section", rows: 1, block: "Services", format: raw %}
+        Our services
+      {% endeditable_text %}
+    </h3>
     <div class="table">
       <div class="table-header">
-        <h2 class="gradient">Experience design.</h2>
+        <h2 class="gradient">
+          {% editable_text "services_toprow_heading", label: "Top Row | Heading", hint: "Heading for the top row of the services section", rows: 1, block: "Services", format: raw %}
+            Experience design.
+          {% endeditable_text %}
+        </h2>
         <p>
-          Customer Journey Mapping, User Segmentation, Experience Design
+          {% editable_text "services_toprow_content", label: "Top Row | Content", hint: "Content for the top row of the services section", rows: 3, block: "Services" %}
+            Customer Journey Mapping, User Segmentation, Experience Design
+          {% endeditable_text %}
         </p>
       </div>
       <div class="table-left">
-        <h2 class="gradient">Pre-customer experience.</h2>
+        <h2 class="gradient">
+          {% editable_text "services_midrow_leftcol_heading", label: "Mid Row - Left Column | Heading", hint: "Heading for the left colum of the services section", rows: 1, block: "Services", format: raw %}
+            Pre-customer experience.
+          {% endeditable_text %}
+        </h2>
         <ul>
-          <li>SEO</li>
-          <li>SEA</li>
-          <li>Social</li>
-          <li>Campaigns</li>
-          <li>Websites</li>
+          {% editable_text "services_midrow_leftcol_content", label: "Mid Row - Left Column | Content", hint: "Content for the left colum of the services section", rows: 4, block: "Services" %}
+            <li>SEO</li>
+            <li>SEA</li>
+            <li>Social</li>
+            <li>Campaigns</li>
+            <li>Websites</li>
+          {% endeditable_text %}
         </ul>
       </div>
       <div class="table-center">
