@@ -13,11 +13,13 @@ is_layout: false
     {% include head %}
   </head>
   <body>
-    {% include 'header_whitepage' %}
+    <header>
+      {% include 'header_whitepage' %}
+    </header>
 
     {% block content %}
     {% endblock %}
-    
+
     {% include 'framework' %}
 
   </body>

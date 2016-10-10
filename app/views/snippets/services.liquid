@@ -20,12 +20,12 @@
       </div>
       <div class="table-left">
         <h2 class="gradient">
-          {% editable_text "services_midrow_leftcol_heading", label: "Mid Row - Left Column | Heading", hint: "Heading for the left colum of the services section", rows: 1, block: "Services", format: raw %}
+          {% editable_text "services_midrow_leftcol_heading", label: "Mid Row - Left Column | Heading", hint: "Heading for the left column of the services section", rows: 1, block: "Services", format: raw %}
             Pre-customer experience.
           {% endeditable_text %}
         </h2>
         <ul>
-          {% editable_text "services_midrow_leftcol_content", label: "Mid Row - Left Column | Content", hint: "Content for the left colum of the services section", rows: 4, block: "Services" %}
+          {% editable_text "services_midrow_leftcol_content", label: "Mid Row - Left Column | Content", hint: "Content for the left column of the services section", rows: 4, block: "Services" %}
             <li>SEO</li>
             <li>SEA</li>
             <li>Social</li>
@@ -35,27 +35,43 @@
         </ul>
       </div>
       <div class="table-center">
-        <h2 class="gradient">Customer experience.</h2>
+        <h2 class="gradient">
+          {% editable_text "services_midrow_midcol_heading", label: "Mid Row - Middle Column | Heading", hint: "Heading for the middle column of the services section", rows: 1, block: "Services", format: raw %}
+            Customer experience.
+          {% endeditable_text %}
+        </h2>
         <ul>
-          <ul>
+          {% editable_text "services_midrow_midcol_content", label: "Mid Row - Middle Column | Content", hint: "Content for the middle column of the services section", rows: 4, block: "Services" %}
             <li>Websites</li>
             <li>Apps</li>
             <li>Social</li>
-          </ul>
+          {% endeditable_text %}
         </ul>
       </div>
       <div class="table-right">
-        <h2 class="gradient">Post-customer experience.</h2>
+        <h2 class="gradient">
+          {% editable_text "services_midrow_rightcol_heading", label: "Mid Row - Right Column | Heading", hint: "Heading for the middle column of the services section", rows: 1, block: "Services", format: raw %}
+            Post-customer experience.
+          {% endeditable_text %}
+        </h2>
         <ul>
-          <li>Websites</li>
-          <li>Apps</li>
-          <li>Social</li>
+          {% editable_text "services_midrow_rightcol_content", label: "Mid Row - Right Column | Content", hint: "Content for the right column of the services section", rows: 4, block: "Services" %}
+            <li>Websites</li>
+            <li>Apps</li>
+            <li>Social</li>
+          {% endeditable_text %}
         </ul>
       </div>
       <div class="table-footer">
-        <h2 class="gradient">Testing &amp; optimizations.</h2>
+        <h2 class="gradient">
+          {% editable_text "services_bottomrow_heading", label: "Bottom Row | Heading", hint: "Heading for the bottom row of the services section", rows: 1, block: "Services", format: raw %}
+            Testing &amp; optimizations.
+          {% endeditable_text %}
+        </h2>
         <p>
-          Data analysys &amp; insights, A/B Testing &amp; frameworks, Custom dashboards.
+          {% editable_text "services_bottomrow_content", label: "Bottom Row | Content", hint: "Content for the bottom row of the services section", rows: 3, block: "Services" %}
+            Data analysys &amp; insights, A/B Testing &amp; frameworks, Custom dashboards.
+          {% endeditable_text %}
         </p>
       </div>
     </div>

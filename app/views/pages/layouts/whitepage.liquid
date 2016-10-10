@@ -7,15 +7,17 @@ published: false
 is_layout: false
 ---
 <!DOCTYPE html>
-<html>
 <html lang="en">
   <head>
     {% include head %}
   </head>
   <body>
-    {% include 'header_whitepage' %}
+    <header>
+      {% include 'header_whitepage' %}
+    </header>
 
     {% block content %}
+      {% comment %} !!!RENDER CONTENT HERE!!! {% endcomment %}
     {% endblock %}
 
     {% include 'footer' %}

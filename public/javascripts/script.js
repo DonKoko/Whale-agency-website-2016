@@ -2,9 +2,6 @@
 (function($) {
   "use strict";
 
-
-
-
   $(document).ready(function() {
 
     function getImgSize(el, imgSrc) {
@@ -22,9 +19,6 @@
       newImg.src = imgSrc;
     }
 
-
-
-
     if ($('*').find("[data-background-image]").length > 0) {
       $('*').find("[data-background-image]").each(function() {
         var el = $(this);
@@ -35,21 +29,19 @@
       });
     }
 
-$('.play-button').click(function(e){
-  e.preventDefault();
+    $('.play-button').click(function(e){
+      e.preventDefault();
 
-   $(this).prettyPhoto();
-     $.prettyPhoto.open($(this).attr('href'));
+       $(this).prettyPhoto();
+         $.prettyPhoto.open($(this).attr('href'));
 
-});
+    });
 
-
-$('.prettyphoto').click(function(){
-         var modal=$(this).find('.modal-content').attr('id');
-
-         $(this).prettyPhoto();
-         $.prettyPhoto.open('#'+modal);
-     });
+    $('.prettyphoto').click(function(){
+      var modal=$(this).find('.modal-content').attr('id');
+      $(this).prettyPhoto();
+      $.prettyPhoto.open('#'+modal);
+    });
 
 
 
@@ -61,11 +53,6 @@ $('.prettyphoto').click(function(){
       });
     }
 
-
-
-
-
-
     $('.modal-trigger').click(function() {
       var modal = $(this).find('.modal').attr('id');
       var modalEl = $('#' + modal);
@@ -73,7 +60,6 @@ $('.prettyphoto').click(function(){
 
       $('#modalTemp').modal({
         show: true,
-
         closeOnEscape: true
       });
 
@@ -81,16 +67,14 @@ $('.prettyphoto').click(function(){
         $('#modalTemp').empty();
       });
 
-$('.close-modal').click(function(event) {
-  event.preventDefault();
-  $('#modalTemp').modal('hide');
-
-});
-
+      $('.close-modal').click(function(event) {
+        event.preventDefault();
+        $('#modalTemp').modal('hide');
+      });
 
       if ($('#modalTemp .flexslider').length > 0) {
 
-       var modalSlider= $('#modalTemp .flexslider').flexslider({
+        var modalSlider= $('#modalTemp .flexslider').flexslider({
           animation: "slide",
           prevText: "",
           nextText: "",
@@ -98,25 +82,18 @@ $('.close-modal').click(function(event) {
           directionNav: false,
           controlNav: false,
           slideshow: false
-
         });
 
-           $('#modalTemp  .btn-prev,#modalTemp .btn-next').on('click', function(e) {
-        e.preventDefault();
-        var href = $(this).attr('href');
+        $('#modalTemp  .btn-prev,#modalTemp .btn-next').on('click', function(e) {
+          e.preventDefault();
+          var href = $(this).attr('href');
 
-        modalSlider.flexslider(href);
-        return false;
-      });
+          modalSlider.flexslider(href);
+          return false;
+        });
       }
 
-
-
-
-
     });
-
-
 
     if ($('.homeslider.flexslider').length > 0) {
       var homeslider = $('.homeslider').flexslider({
@@ -130,27 +107,19 @@ $('.close-modal').click(function(event) {
         start: function(slider) {
           $('.homeslider').find('.preloader').removeClass('loading');
           var cs = slider.find('.slide').eq(slider.currentSlide);
-
-
-
-
         },
+
         after: function(slider) {
           $('.homeslider').find('.preloader').removeClass('loading');
           var cs = slider.find('.slide').eq(slider.currentSlide);
-
-
-
         },
+
         before: function(slider) {
           $('.homeslider').find('.preloader').addClass('loading');
           var cs = slider.find('.slide').eq(slider.currentSlide);
-
-
-
-
         }
       });
+
       $('.homeslider .btn-prev,.homeslider .btn-next').on('click', function(e) {
         e.preventDefault();
         var href = $(this).attr('href');
@@ -158,9 +127,8 @@ $('.close-modal').click(function(event) {
         homeslider.flexslider(href);
         return false;
       });
+
     }
-
-
 
     if ($('.services-slider.flexslider').length > 0) {
       var sliderEl = $('.services-slider');
@@ -173,29 +141,19 @@ $('.close-modal').click(function(event) {
         controlNav: false,
         slideshow: false,
         start: function(slider) {
-
           var cs = sliderEl.find('.slide').eq(slider.currentSlide);
-
-
-
-
         },
+
         after: function(slider) {
-
           var cs = sliderEl.find('.slide').eq(slider.currentSlide);
-
-
-
         },
+
         before: function(slider) {
-
           var cs = sliderEl.find('.slide').eq(slider.currentSlide);
-
-
-
-
         }
+
       });
+
       $('.services-slider .btn-prev,.services-slider .btn-next').on('click', function(e) {
         e.preventDefault();
         var href = $(this).attr('href');
@@ -205,13 +163,10 @@ $('.close-modal').click(function(event) {
       });
     }
 
-
-
     $('[data-placeholder]').focus(function() {
       var input = $(this);
       if (input.val() == input.attr('data-placeholder')) {
         input.val('');
-
       }
     }).blur(function() {
       var input = $(this);
@@ -230,10 +185,7 @@ $('.close-modal').click(function(event) {
       });
     });
 
-
   });
-
-
 
   $('.goto-top').click(function(e) {
     e.preventDefault();
@@ -242,10 +194,8 @@ $('.close-modal').click(function(event) {
     }, 2000);
   });
 
-
   $('body').scrollspy({target: '.nav-menu'});
 //hashtag navigation address setup (deeplink)
-
 
   $('.nav-menu a').address($(this).attr('href'));
   $('.top-drop-menu').change(function() {
@@ -275,7 +225,6 @@ $('.close-modal').click(function(event) {
 
       });
 
-
       scrollToSection("#" + pageID);
     } else {
       if (pageID.indexOf('.') > -1) {
@@ -292,7 +241,6 @@ $('.close-modal').click(function(event) {
 
   function scrollToSection(destSection) {
 
-
     $('html, body').stop().animate({
       scrollTop: $(destSection).offset().top
     }, 2000, 'easeInOutExpo');
@@ -301,25 +249,19 @@ $('.close-modal').click(function(event) {
 
   $('.nav-menu a').bind('click', function(event) {
 
-
     event.preventDefault();
     var clickedMenu = $(this);
     $('.nav-menu .active').toggleClass('active');
     clickedMenu.parent().toggleClass('active');
 
-
     scrollToSection(clickedMenu.attr('href'));
-
-
-
 
   });
 
-
 })(jQuery);
-//
-//
-//
+
+
+
 // Sticky Nav
 $(window).scroll(function(e) {
   var nav_anchor = $("header");
@@ -332,20 +274,12 @@ $(window).scroll(function(e) {
     $('.goto-top').css({'opacity': 0});
   }
 
-
   if ($(this).scrollTop() >= 100)
   {
     nav_anchor.addClass('narrow');
-
-
-
-
   }
   else if ($(this).scrollTop() < 100)
   {
-
-
     nav_anchor.removeClass('narrow');
-
   }
 });

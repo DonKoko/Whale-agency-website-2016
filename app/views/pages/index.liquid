@@ -9,13 +9,44 @@ editable_elements:
   Clients/clients_heading: Trusted by these organisations.
   Jumbotron/jumbo_heading: 'Stay #000000 for life'
   Jumbotron/jumbotron: "/samples/pages/brave-merida-hi-res.jpg"
+  content/Row 2 - Column 1: |-
+    <li>SEO</li>
+                <li>SEA</li>
+                <li>Social</li>
+                <li>Campaigns</li>
+                <li>Websites</li>
+  Services/services_heading: Our services
+  Services/services_toprow_heading: Experience design.
+  Services/services_toprow_content: Customer Journey Mapping, User Segmentation, Experience
+    Design
+  content/Middle Row - Column 1: |-
+    <li>SEO</li>
+                <li>SEA</li>
+                <li>Social</li>
+                <li>Campaigns</li>
+                <li>Websites</li>
+  Services/services_midrow_leftcol_heading: Pre-customer experience.
+  Services/services_midrow_leftcol_content: "<li>SEO</li>\r\n            <li>SEA</li>\r\n
+    \           <li>Social</li>\r\n            <li>Campaigns</li>\r\n            <li>Websites</li>"
+  Services/services_midrow_midcol_heading: Customer experience.
+  Services/services_midrow_midcol_content: |-
+    <li>Websites</li>
+                <li>Apps</li>
+                <li>Social</li>
+  Services/services_midrow_rightcol_heading: Post-customer experience.
+  Services/services_midrow_rightcol_content: |-
+    <li>Websites</li>
+                <li>Apps</li>
+                <li>Social</li>
+  Services/services_bottomrow_heading: Testing &amp; optimizations.
+  Services/services_bottomrow_content: Data analysys &amp; insights, A/B Testing &amp;
+    frameworks, Custom dashboards.
 ---
 {% extends 'layouts/default' %}
 
 {% block content %}
 
   <div class="wrapper">
-    <!-- <section id="jumbo" style="background-image: url('https://hd.unsplash.com/photo-1454991727061-be514eae86f7');"> -->
     <section id="jumbo" style="background-image: url('{% editable_file 'jumbotron', block: 'Jumbotron' %}/samples/content_entries/Carlosthecreator.jpg{% endeditable_file %}');">
       <div class="white-noise"></div>
       <div id="jumbo-heading" class="text-center">
@@ -79,7 +110,11 @@ editable_elements:
       <div class="container ">
         <div class="row">
           <div class="col-md-8 col-md-offset-1">
-            <h1 class="gradient">We believe in the power of what if?</h1>
+            <h1 class="gradient">
+              {% editable_text "whatif_heading", label: "Whatif heading", hint: "Heading for the 'what if' section", rows: 1, block: "What if", format: raw %}
+                We believe in the power of what if?
+              {% endeditable_text %}
+            </h1>
           </div>
         </div>
       </div>
@@ -89,7 +124,11 @@ editable_elements:
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <h3 class="text-center">You reached the end!</h3>
+            <h3 class="text-center">
+              {% editable_text "contact_heading", label: "Contact heading", hint: "Heading for the section", rows: 1, block: "Contact", format: raw %}
+                You reached the end!
+              {% endeditable_text %}
+            </h3>
             <h1 class="gradient text-center">Feel like <a href="mailto:collab@whale-agency.com" class="mailto">collaborating</a>, starting a new <a href="mailto:hire@whale-agency.com" class="mailto">job</a> with us, or just want to say <a href="mailto:hello@whale-agency.com" class="mailto">hello?</a></h1>
           </div>
         </div>

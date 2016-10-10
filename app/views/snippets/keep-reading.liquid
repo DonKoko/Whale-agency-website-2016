@@ -1,21 +1,35 @@
 <div class="mosaic-holder">
   {% for card in contents.home_cards %}
 
-    <div class="col-md-3 {% if forloop.index == 2 or forloop.index == 3 %} middle-row {% endif %} no-margin">
+    {% if card.title == project.name %}
 
-    {% if card.video == true %}
-      {% include 'card-video' with card: card, card_number: forloop.index, smallcard: smallcard %}
-    {% elsif card.card_type == "Project" %}
-      {% include 'card-project' with card: card, card_number: forloop.index, smallcard: smallcard %}
+      {% assign skipped = true %}
+
     {% else %}
-      {% include 'card-post' with card: card, card_number: forloop.index, smallcard: smallcard %}
+
+      {% if skipped == true %}
+        {% assign index_number = forloop.index | minus: 1 %}
+      {% else %}
+        {% assign index_number = forloop.index %}
+      {% endif %}
+
+      <div class="col-md-3 {% if index_number == 2 or index_number == 3 %} middle-row {% endif %} no-margin">
+        {% if card.video == true %}
+          {% include 'card-video' with card: card, card_number: index_number, smallcard: smallcard %}
+        {% elsif card.card_type == "Project" %}
+          {% include 'card-project' with card: card, card_number: index_number, smallcard: smallcard %}
+        {% else %}
+          {% include 'card-post' with card: card, card_number: index_number, smallcard: smallcard %}
+        {% endif %}
+      </div>
+
     {% endif %}
 
-    </div>
-
-    {% if forloop.index == 4 %}
-     {% break %}
-   {% endif %}
+    {% if forloop.index == 4 and skipped != true %}
+      {% break %}
+    {% elsif forloop.index == 5 %}
+      {% break %}
+    {% endif %}
 
   {% endfor %}
 </div>
