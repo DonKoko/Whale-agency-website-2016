@@ -7,7 +7,7 @@ editable_elements:
   content/sub_heading: A digital product agency for the
   content/heading: Passionately curious
   Clients/clients_heading: Trusted by these organisations.
-  Jumbotron/jumbo_heading: Passionately curious
+  Jumbotron/jumbo_heading: Passionately curious.
   Jumbotron/jumbotron: "/samples/pages/him.jpg"
   content/Row 2 - Column 1: |-
     <li>SEO</li>
@@ -15,7 +15,7 @@ editable_elements:
                 <li>Social</li>
                 <li>Campaigns</li>
                 <li>Websites</li>
-  Services/services_heading: Our services
+  Services/services_heading: What we do
   Services/services_toprow_heading: Experience design.
   Services/services_toprow_content: Customer Journey Mapping, User Segmentation, Experience
     Design
@@ -39,6 +39,14 @@ editable_elements:
     frameworks, Custom dashboards.
   What if/whatif_heading: We believe in the power of what if?
   Contact/contact_heading: You reached the end!
+  Jumbotron/jumbo_subheading: A digital product agency for the
+  Jargon/jargon_heading: Some industry jargon.
+  Jargon/jargon_paragraph: "<p>When you hire someone, we think it matter more how
+    they work and what they can accomplish for you, than whether or not they've used
+    a particular framework.</p>\r\n      <p>But we recognize that sometimes you've
+    been told that you gotta find a team that knows [INSERT TECHNOLOGY DU JOUR] or
+    it won't work.</p>\r\n      <p>So here are the technologies we're familiar enough
+    with to recommend, support, or talk you out of (depending on your project).</p>"
 ---
 {% extends 'layouts/default' %}
 
@@ -48,11 +56,19 @@ editable_elements:
     <section id="jumbo" style="background-image: url('{% editable_file 'jumbotron', block: 'Jumbotron' %}/samples/content_entries/Carlosthecreator.jpg{% endeditable_file %}');">
       <div class="white-noise"></div>
       <div id="jumbo-heading" class="text-center">
+
+        <h3>
+          {% editable_text "jumbo_subheading", label: "Subheading for the jumbotron", rows: 2, block: "Jumbotron", format: raw %}
+            A digital product agency for the
+          {% endeditable_text %}
+        </h3>
+
         <h1 class="text-white">
           {% editable_text "jumbo_heading", label: "Jumbotron heading", hint: "Heading for the jumbotron", rows: 1, block: "Jumbotron", format: raw %}
             The Dawn of #Dankness
           {% endeditable_text %}
         </h1>
+
       </div>
     </section>
 

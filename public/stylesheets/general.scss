@@ -1,6 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Libre+Baskerville';
 
 $grey: #585858;
+$body_grey: #F7F7F7;
+$body_grey_dark: #F7F7F7;
 $lightblue: #80BAFF;
 $blue_overlay: #222945;
 $header: #2E3653;
@@ -10,12 +12,12 @@ $header: #2E3653;
 body{
   font-family: 'Libre Baskerville', serif;
   font-size: 18px;
-  color: $grey;
+  color: $body_grey;
 }
 
 h1{
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 40px;
+  font-size: 49px;
   font-weight: bold;
   margin-bottom: 25px;
   color: $header;
@@ -41,6 +43,7 @@ h3 {
 p {
   font-family: 'Libre Baskerville', serif;
   line-height: 1.7em;
+  color: rgba(88, 88, 88, 90);
 }
 
 .container {
@@ -84,10 +87,16 @@ p {
   #jumbo-heading {
     position: absolute;
     width: 100%;
-    margin-top: 22.5vmax;
-    overflow: hidden;
-    height: 50px;
-    line-height: 40px;
+    margin-top: 20vmax;
+    h1 {
+      font-size: 64px;
+    }
+    h3 {
+      text-transform: none;
+      font-size: 18px;
+      color: white;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -100,7 +109,7 @@ p {
   background-color: white;
 }
 
-#works { padding-right: 15px; }
+#works { padding-right: 15px; background-color: $body_grey_dark;}
 #grid-section { padding: 7vmax; }
 #services { padding: 7vmax; }
 #jargon { padding: 7vmax; }
@@ -438,6 +447,7 @@ header {
 
 footer{
   margin: 0px;
+  padding: 25px 0;
 }
 
 .footer{
