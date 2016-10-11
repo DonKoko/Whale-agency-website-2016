@@ -7,8 +7,8 @@ editable_elements:
   content/sub_heading: A digital product agency for the
   content/heading: Passionately curious
   Clients/clients_heading: Trusted by these organisations.
-  Jumbotron/jumbo_heading: 'Stay #000000 for life'
-  Jumbotron/jumbotron: "/samples/pages/brave-merida-hi-res.jpg"
+  Jumbotron/jumbo_heading: Passionately curious
+  Jumbotron/jumbotron: "/samples/pages/him.jpg"
   content/Row 2 - Column 1: |-
     <li>SEO</li>
                 <li>SEA</li>
@@ -29,18 +29,16 @@ editable_elements:
   Services/services_midrow_leftcol_content: "<li>SEO</li>\r\n            <li>SEA</li>\r\n
     \           <li>Social</li>\r\n            <li>Campaigns</li>\r\n            <li>Websites</li>"
   Services/services_midrow_midcol_heading: Customer experience.
-  Services/services_midrow_midcol_content: |-
-    <li>Websites</li>
-                <li>Apps</li>
-                <li>Social</li>
+  Services/services_midrow_midcol_content: "<li>Websites</li>\r\n            <li>Apps</li>\r\n
+    \           <li>Social</li>"
   Services/services_midrow_rightcol_heading: Post-customer experience.
-  Services/services_midrow_rightcol_content: |-
-    <li>Websites</li>
-                <li>Apps</li>
-                <li>Social</li>
+  Services/services_midrow_rightcol_content: "<li>Websites</li>\r\n            <li>Apps</li>\r\n
+    \           <li>Social</li>"
   Services/services_bottomrow_heading: Testing &amp; optimizations.
   Services/services_bottomrow_content: Data analysys &amp; insights, A/B Testing &amp;
     frameworks, Custom dashboards.
+  What if/whatif_heading: We believe in the power of what if?
+  Contact/contact_heading: You reached the end!
 ---
 {% extends 'layouts/default' %}
 
@@ -97,6 +95,12 @@ editable_elements:
     <section class="services" id="services">
       <div class="container">
         {% include 'services' %}
+      </div>
+    </section>
+
+    <section class="jargon" id="jargon">
+      <div class="container">
+        {% include 'jargon' %}
       </div>
     </section>
 

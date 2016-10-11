@@ -88,3 +88,4 @@ if(!mobile){
 }( jQuery ));
 
 jQuery("#jumbo").tinyparallax();
+jQuery("#projectCover").tinyparallax({movePercent: 0.75, offset: -250});

@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <h1 class="gradient">
+      {% editable_text "jargon_heading", label: "Jargon heading", hint: "Heading for the jargon section", rows: 1, block: "Jargon", format: raw %}
+        Some industry jargon.
+      {% endeditable_text %}
+    </h1>
+
+    {% editable_text "jargon_paragraph", label: "Jargon paragraph", hint: "Text for the jargon section", rows: 5, block: "Jargon", format: raw %}
+      <p>When you hire someone, we think it matter more how they work and what they can accomplish for you, than whether or not they've used a particular framework.</p>
+      <p>But we recognize that sometimes you've been told that you gotta find a team that knows [INSERT TECHNOLOGY DU JOUR] or it won't work.</p>
+      <p>So here are the technologies we're familiar enough with to recommend, support, or talk you out of (depending on your project).</p>
+    {% endeditable_text %}
+
+    <div class="row">
+      {% assign fw_percolumn = contents.frameworks.count | round: 2 | divided_by: 3 | ceil %}
+      {% assign start_col2 = fw_percolumn | plus: 1 %}
+      {% assign end_col2 = fw_percolumn | times: 2 %}
+      {% assign start_col3 = fw_percolumn | times: 2 | plus: 1 %}
+
+      {% for framework in contents.frameworks %}
+
+        {% if forloop.first %}
+          <div class="col-md-3">
+        {% elsif forloop.index == start_col2 or forloop.index == start_col3 %}
+          <div class="col-md-3 col-md-offset-1">
+        {% endif %}
+
+        <a class="framework-links" href="{{ framework.url }}" target="_blank">{{ framework.name }}</a><br>
+
+        {% if forloop.index == fw_percolumn or forloop.index == end_col2 or forloop.last %}
+          </div>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

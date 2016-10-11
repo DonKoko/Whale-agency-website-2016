@@ -107,3 +107,24 @@ fields:
     hint: Link to project
     required: false
     type: string
+
+- quote:
+    label: Quote
+    hint: Quote to be attached to this project
+    required: false
+    type: string
+
+- quote_name:
+    label: Quoted person
+    required: false
+    type: string
+
+- keystat_heading:
+    label: Key Stat Heading
+    required: false
+    type: string
+
+- keystat_paragraph:
+    label: Key Stat Paragraph
+    required: false
+    type: text
