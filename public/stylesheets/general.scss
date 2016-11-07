@@ -6,6 +6,7 @@ $body_grey_dark: #F7F7F7;
 $lightblue: #80BAFF;
 $blue_overlay: #222945;
 $header: #2E3653;
+$paragraph: rgba(88, 88, 88, 90);
 
 /*#3023AE, #52B2F4*/
 
@@ -43,7 +44,7 @@ h3 {
 p {
   font-family: 'Libre Baskerville', serif;
   line-height: 1.7em;
-  color: rgba(88, 88, 88, 90);
+  color: $paragraph;
 }
 
 .container {
@@ -354,6 +355,7 @@ p {
         margin-bottom: 20px;
         font-family: 'Libre Baskerville', serif;
         line-height: 1.7em;
+        color: $paragraph;
       }
     }
   }
@@ -410,8 +412,8 @@ header {
   background: #fff url("../images/team.png") no-repeat;
   background-size: cover;
   background-position: center bottom;
-  background-size: 800px;
-  height: 600px;
+  background-size: 60vmax;
+  height: 35vmax;
 }
 
 .end{
