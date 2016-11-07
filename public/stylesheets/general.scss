@@ -110,7 +110,7 @@ p {
   background-color: white;
 }
 
-#works { padding-right: 15px; background-color: $body_grey_dark;}
+#works { margin-top: 0; padding-right: 15px; background-color: $body_grey_dark;}
 #grid-section { padding: 7vmax; }
 #services { padding: 7vmax; }
 #jargon { padding: 7vmax; }
@@ -255,9 +255,8 @@ p {
 }
 
 // OVERRIDES //
-.mosaic-holder .mosaic-item {
-  min-height: 325px;
-}
+.mosaic-holder { margin-top: -100px; }
+.mosaic-holder .mosaic-item { min-height: 325px; }
 .mosaic-holder .mosaic-item.small {
   min-height: 225px;
   height: 225px;
@@ -746,6 +745,7 @@ footer{
 	text-indent: -9000px;
 	cursor: pointer;
 	z-index: 1000;
+  color: black;
 }
 
 .rb-close::before {

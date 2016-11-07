@@ -1,27 +1,32 @@
-  <div class="row">
-    <div class="col-md-12">
-      <section class="cd-horizontal-timeline">
-        <div class="timeline">
-          <div class="events-wrapper">
-            <div class="events">
-              <ol>
-                {% for milestone in contents.milestones %}
-                  <li>
-                    <a href="#0"
-                       data-date="{{ milestone.date | date: '%d/%m/%Y' }}" '{% if forloop.first %}' class="selected" '{% endif %}'>
-                    {{ milestone.date | format_date: "%d %b" }}
-                    </a>
-                  </li>
-                {% endfor %}
-              </ol>
+<div class="row">
+  <div class="col-md-12">
+    <section class="cd-horizontal-timeline">
+
+      <div class="timeline">
+
+        <div class="events-wrapper">
+          <div class="events">
+            <ol>
+              {% for milestone in contents.milestones %}
+                <li>
+                  <a href="#0"
+                     data-date="{{ milestone.date | date: '%d/%m/%Y' }}" '{% if forloop.first %}' class="selected" '{% endif %}'>
+                  {{ milestone.date | format_date: "%d %b" }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ol>
             <span class="filling-line" aria-hidden="true"></span>
           </div> <!-- .events -->
         </div> <!-- .events-wrapper -->
+
         <ul class="cd-timeline-navigation">
           <li><a href="#0" class="prev inactive">Prev</a></li>
           <li><a href="#0" class="next">Next</a></li>
         </ul> <!-- .cd-timeline-navigation -->
+        
       </div> <!-- .timeline -->
+
       <div class="events-content">
         <ol>
           {% for milestone in contents.milestones %}
@@ -33,6 +38,7 @@
           {% endfor %}
         </ol>
       </div> <!-- .events-content -->
+
     </section>
   </div>
-  </div>
+</div>
