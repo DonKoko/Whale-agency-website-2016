@@ -146,6 +146,8 @@ p {
   }
 
   .meta {
+    font-family: 'Montserrat', sans-serif !important;
+
     .card-meta {
       height: 15%;
       .card-date {
@@ -278,7 +280,14 @@ p {
 
 .isolayer--deco1 {
   height: 1200px !important;
+  width: 1000px !important;
   zoom: 0.9;
+}
+
+div.isolayer.isolayer--deco1.isolayer--shadow {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform: translateX(40vw) translateY(-740px) rotateX(45deg) rotateZ(45deg) !important;
 }
 
 .projects, .services, .whatif, .contact{
@@ -381,10 +390,15 @@ p {
 
 #clients{
   padding: 100px;
+  background-color: white;
 }
 
 #services {
-    background-color: white;
+  background-color: #F7F7F7;
+}
+
+#jargon {
+  background-color: white;
 }
 
 #contact {
@@ -393,9 +407,8 @@ p {
 }
 
 header {
-  ul {
-    margin-top: 10px;
-  }
+  ul { margin-top: 10px; }
+  &.narrow { background-color: rgba(34, 41, 69, 0.9) }
   .top-menu-holder ul li {
     margin: 0 18px;
     display: inline-block;
@@ -511,6 +524,8 @@ footer{
   padding: 160px;
 }
 
+.description { padding-bottom: 100px; }
+
 .tasks{
   font-size: 20px;
 }
@@ -565,8 +580,9 @@ footer{
     }
 }
 
-.keepreading{
-  i{
+.keepreading {
+  background-color: #F1F7FF;
+  i {
     color: $header;
     margin-bottom: 20px;
   }
