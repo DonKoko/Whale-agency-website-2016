@@ -7,22 +7,32 @@ published: true
 is_layout: false
 content_type: projects
 ---
-{% extends "layouts/whitepage" %}
+{% extends "layouts/default" %}
 
 {% block content %}
 
-  <div class="wrapper">
-
+  <div class="wrapper project">
     <section class="content-portfolio description white">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
+            {% if project.video %}
+              <div class="container" style="    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;">
+                <iframe style="position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;" src="https://www.youtube.com/embed/{{ yt_link | split: 'https://www.youtube.com/watch?v=' }}?rel=0"
+                frameborder="0" allowfullscreen class="video"></iframe>
+              </div>
+            {% endif %}
+
             <h2 class="tasks">{{ project.tasks }}</h2>
             <h1>{{ project.name }}</h1>
 
-            <div class="" style="color: black;">
+            <div style="color: black;">
               {{ project.description }}
-
             </div>
 
           </div>
@@ -31,12 +41,14 @@ content_type: projects
     </section>
 
     {% if project.cover_image %}
-      <section id="projectCover" style="height: 500px; width: 100%;
-                                        background-image: url('{{ project.cover_image.url }}');
-                                        background-position: center;
-                                        background-size: cover;
-                                        background-repeat: none;">
-      <div class="white-noise"></div>
+      <section id="projectCover">
+          <div class="" style="height: 500px;
+                               width: 100%;
+                               background-image: url('{{ project.cover_image.url }}');
+                               background-position: center;
+                               background-size: cover;
+                               background-repeat: no-repeat;"></div>
+          <!-- <div class="white-noise"></div> -->
       </section>
     {% endif %}
 
@@ -66,17 +78,20 @@ content_type: projects
               <p class="text-center">
                 {{ project.keystat_paragraph }}
               </p>
-              <img src="{{ project.statimage.url }}" />
+              <!-- <img src="{{ project.statimage.url }}" /> -->
+              <img src="{{ 'Carlosthecreator.jpg' | theme_image_url }}" />
             </div>
           </div>
         {% endif %}
 
       <div class="row">
-        <div class="col-md-3 factitem">
+        <div class="text-left col-md-3 factitem">
           <h2>
-            {{ project.stat1title }}
+            95%
           </h2>
-          {{ project.stat1content }}
+          <span>
+            Growth in ticket sales.
+          </span>
         </div>
         <div class="col-md-3 col-md-offset-1 factitem">
           <h2>{{ project.stat2title }}</h2>

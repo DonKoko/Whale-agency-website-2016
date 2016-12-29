@@ -19,15 +19,17 @@
 {{ 'font-awesome/font-awesome.min.css'                    | stylesheet_tag }}
 {{ 'general.css'                                          | stylesheet_tag }}
 
+
+{{ 'plugins/horizontal-timeline/style.css'              | stylesheet_tag }}
+{{ 'plugins/horizontal-timeline/modernizr.js'           | javascript_tag }}
+
+{{ 'plugins/expanding-overlay/component.css'            | stylesheet_tag }}
+{{ 'plugins/expanding-overlay/climacons.css'            | stylesheet_tag }}
+{{ 'plugins/expanding-overlay/modernizr.custom.js'      | javascript_tag }}
 {% if page.handle == "home" %}
   {{ 'plugins/isometric-grid/component.css'               | stylesheet_tag }}
 
-  {{ 'plugins/horizontal-timeline/style.css'              | stylesheet_tag }}
-  {{ 'plugins/horizontal-timeline/modernizr.js'           | javascript_tag }}
-
-  {{ 'plugins/expanding-overlay/component.css'            | stylesheet_tag }}
-  {{ 'plugins/expanding-overlay/climacons.css'            | stylesheet_tag }}
-  {{ 'plugins/expanding-overlay/modernizr.custom.js'      | javascript_tag }}
 {% endif %}
+
 
 {{ 'custom.js'                                            | javascript_tag }}
