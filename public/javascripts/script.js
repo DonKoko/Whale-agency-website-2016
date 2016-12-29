@@ -286,3 +286,19 @@ $(window).scroll(function(e) {
     // $('.logo-holder .logo').html("<object type='image/svg+xml' data='/images/logo_blue.svg' id='logo'></object>");
   }
 });
+
+
+// Read scroll
+$(document).on('ready', function(){
+  var winHeight = $(window).height();
+  var docHeight = $(document).height();
+  var progressBar = $('#readScroll'), max, value;
+  var max = docHeight - winHeight;
+  $('#readScroll').attr('max', max);
+  $(document).on('scroll', function(){
+      value = $(window).scrollTop();
+      $('#readScroll').attr('value', value);
+  });
+});
+
+$('#article').readingTime();

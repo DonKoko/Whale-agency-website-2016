@@ -11,7 +11,7 @@ content_type: projects
 
 {% block content %}
 
-  <div class="wrapper">
+  <div class="wrapper" id="article">
 
     <section class="content-portfolio description white">
       <div class="container">
@@ -19,6 +19,7 @@ content_type: projects
           <div class="col-md-10 col-md-offset-1">
             <h2 class="tasks">{{ project.tasks }}</h2>
             <h1>{{ project.name }}</h1>
+            <div class="eta"></div>
 
             <div class="" style="color: black;">
               {{ project.description }}

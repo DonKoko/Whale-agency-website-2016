@@ -667,6 +667,45 @@ footer{
   }
 }
 
+// Readscroll
+.read-scroll {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: transparent;
+  color: linear-gradient(125deg, #3023AE, #52B2F4);;
+  &::-webkit-progress-bar {
+    background-color: transparent;
+  }
+  &::-webkit-progress-value {
+    background: linear-gradient(125deg, #3023AE, #52B2F4);
+  }
+  &::-moz-progress-bar {
+    background-color: linear-gradient(125deg, #3023AE, #52B2F4);
+  }
+}
+
+.eta{
+  color: #2E3653;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.narrow{
+  .project{
+    .row{
+      margin-top: 10px;
+    }
+  }
+}
+// End Readscroll
+
 // PROJECTS TEMPLATE
 
 
