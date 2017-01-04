@@ -16,6 +16,9 @@ is_layout: true
 
     <header>
       {% include 'header' %}
+      {% if page.handle != 'home' %}
+        <progress class="read-scroll" id="readScroll" value="0"></progress>
+      {% endif %}
     </header>
 
     {% block content %}

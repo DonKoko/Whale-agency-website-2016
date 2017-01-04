@@ -277,12 +277,33 @@ $(window).scroll(function(e) {
   if ($(this).scrollTop() >= 100)
   {
     nav_anchor.addClass('narrow');
-    // $('.logo-holder .logo').child().data("/images/logo.svg");
+    // $('.logo').addClass('svg-white');
+    // $('.logo').child().data("/images/logo.svg");
+    // $("#svg-logo").attr("data", "/images/logo.svg");
+    // console.log($("#svg-logo").attr("data"));
     // html("<object type='image/svg+xml' data='/images/logo.svg' id='logo'></object>");
   }
   else if ($(this).scrollTop() < 100)
   {
     nav_anchor.removeClass('narrow');
+    // $('.logo').removeClass('svg-white');
+    // $("#svg-logo").attr("data", "/images/logo_blue.svg");
     // $('.logo-holder .logo').html("<object type='image/svg+xml' data='/images/logo_blue.svg' id='logo'></object>");
   }
 });
+
+
+// Read scroll
+$(document).on('ready', function(){
+  var winHeight = $(window).height();
+  var docHeight = $(document).height();
+  var progressBar = $('#readScroll'), max, value;
+  var max = docHeight - winHeight;
+  $('#readScroll').attr('max', max);
+  $(document).on('scroll', function(){
+      value = $(window).scrollTop();
+      $('#readScroll').attr('value', value);
+  });
+});
+
+$('#article').readingTime();
